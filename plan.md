@@ -72,11 +72,11 @@ Exit: documentation-only commit on a feature branch, with no application scaffol
 
 Owner: Codex.
 
-- Initialize Node 22, TypeScript, React, and vinext with one lockfile.
-- Add five routes, the application shell, CSS tokens, self-hosted fonts, and static-export configuration.
-- Define canonical TypeScript schemas and a small checked-in valid fixture.
-- Render a plain accessible matrix and methodology page from the fixture before adding visual polish.
-- Add unit-test and browser-smoke commands.
+- [x] Initialize Node 22, TypeScript, React, and vinext with one lockfile.
+- [x] Add five routes, the application shell, CSS tokens, and static-export configuration.
+- [x] Define a small typed fixture that preserves independent flow and pressure tracks.
+- [x] Render a plain accessible matrix and methodology page from the fixture before adding visual polish.
+- [x] Add unit-test, static-artifact smoke, and production-route smoke commands.
 
 Exit: both local and static builds render typed fixture data; no official adapter exists yet.
 

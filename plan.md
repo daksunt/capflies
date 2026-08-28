@@ -64,13 +64,13 @@ Coverage describes the nature of the official series, not total market ownership
 - [x] Rename the local workspace to `capflies`.
 - [x] Define the system, data contracts, methodology, interface, and failure behavior in `architecture.md`.
 - [x] Define features, scope, milestones, verification, and launch gates in `plan.md`.
-- [ ] User accepts the documentation before application implementation.
+- [x] User accepted the documentation and authorized implementation on `main`.
 
 Exit: documentation-only commit on a feature branch, with no application scaffold.
 
 ### M1 — Minimal foundation
 
-Owner: Cursor for the first implementation; Codex integrates and verifies.
+Owner: Codex.
 
 - Initialize Node 22, TypeScript, React, and vinext with one lockfile.
 - Add five routes, the application shell, CSS tokens, self-hosted fonts, and static-export configuration.
@@ -82,7 +82,7 @@ Exit: both local and static builds render typed fixture data; no official adapte
 
 ### M2 — Source registry and adapters
 
-Owner: Grok implements bounded adapters in the order below; Codex verifies every official identifier and license boundary.
+Owner: Codex verifies every official identifier and license boundary.
 
 1. Fed, New York Fed, and Treasury Fiscal Data.
 2. Treasury TIC.
@@ -103,7 +103,7 @@ Exit: selected canonical observations can be rebuilt from all launch sources wit
 
 ### M3 — Methodology and weekly artifacts
 
-Owner: Claude implements or reviews pure transformation and release functions; Codex resolves findings.
+Owner: Codex.
 
 - Implement transforms, no-lookahead calibration, signed percentile scores, aggregation, confidence, freshness, and cell states.
 - Bootstrap approximately ten years of latest-vintage history where sources provide it.
@@ -115,7 +115,7 @@ Exit: a manual refresh produces a complete deterministic candidate release with 
 
 ### M4 — Visual product
 
-Owner: Cursor implements; Codex compares against the approved direction and checks data semantics.
+Owner: Codex.
 
 - Build the polished rotation matrix, detail drawer, context charts, ranked lanes, histories, legends, and mobile ranked list.
 - Implement loading, stale, unavailable, invalid-version, error, and offline-fallback states.
@@ -151,19 +151,9 @@ Owner: Codex performs only after explicit user approval.
 
 Exit: public site and repository are reachable, consistent, and contain no secrets or fabricated production data.
 
-## 5. Worker CLI protocol
+## 5. Delivery protocol
 
-Codex remains the architect and integrator. Grok, Cursor, and Claude receive short tasks that reference this plan and `architecture.md` rather than repeated pasted context.
-
-Each worker task must specify:
-
-- one bounded outcome and explicit file ownership;
-- relevant contract or architecture section;
-- commands that must pass;
-- prohibited scope and dependencies;
-- a request to report assumptions and unresolved facts.
-
-Workers run sequentially when they share files. Codex reviews the diff, source provenance, and test output before retaining it. A worker is reprompted when its result violates the architecture; Codex does not preserve code merely because it was generated. This uses the external CLIs for most implementation while reserving Codex effort for decisions, integration, and verification.
+Codex is the sole implementation worker by explicit direction. Work lands directly on `main` in small, verified commits. Before each commit, Codex inspects the exact changed paths, runs the relevant checks, preserves unrelated user files, and pushes the verified result. No external coding CLI or parallel agent is used.
 
 ## 6. Verification matrix
 

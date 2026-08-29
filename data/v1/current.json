@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "2026-W35",
-  "provenance": "fixture",
-  "manifestPath": "/capflies/data/v1/releases/2026-W35/release.json",
-  "manifestSha256": "1aa194f60d70e9072d1859b37cc2c3b8f52bec8b150712e5532e5725924b71fe"
+  "release": "official-us-2026-08-26",
+  "provenance": "official",
+  "manifestPath": "/capflies/data/v1/releases/official-us-2026-08-26/release.json",
+  "manifestSha256": "6c5778522a8647fb0bde030d7c6422248f15fdba80bf08c2ffc6c533576e15c9"
 }

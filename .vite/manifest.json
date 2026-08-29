@@ -6,36 +6,36 @@
       "_rolldown-runtime-hePW80VL.js"
     ]
   },
-  "_layout-Fq6deOY9.js": {
-    "file": "capflies/_next/static/chunks/layout-Fq6deOY9.js",
+  "_layout-CPlNMcA3.js": {
+    "file": "capflies/_next/static/chunks/layout-CPlNMcA3.js",
     "name": "layout",
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js",
-      "_vinext-CXup4KCC.js"
+      "_vinext-hPdxre0R.js"
     ]
   },
-  "_matrix-D7SiPV6a.js": {
-    "file": "capflies/_next/static/chunks/matrix-D7SiPV6a.js",
+  "_matrix-DtqXjHNt.js": {
+    "file": "capflies/_next/static/chunks/matrix-DtqXjHNt.js",
     "name": "matrix",
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-Fq6deOY9.js"
+      "_layout-CPlNMcA3.js"
     ]
   },
   "_rolldown-runtime-hePW80VL.js": {
     "file": "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "name": "rolldown-runtime"
   },
-  "_vinext-CXup4KCC.js": {
-    "file": "capflies/_next/static/chunks/vinext-CXup4KCC.js",
+  "_vinext-hPdxre0R.js": {
+    "file": "capflies/_next/static/chunks/vinext-hPdxre0R.js",
     "name": "vinext",
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js"
     ],
     "dynamicImports": [
-      "_vinext-CXup4KCC.js",
+      "_vinext-hPdxre0R.js",
       "_framework-CNxXF_6U.js"
     ]
   },
@@ -52,67 +52,67 @@
     ]
   },
   "pages/cross-border.tsx": {
-    "file": "capflies/_next/static/chunks/cross-border-CtvjYThe.js",
+    "file": "capflies/_next/static/chunks/cross-border-CCge08YK.js",
     "name": "cross-border",
     "src": "pages/cross-border.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-Fq6deOY9.js"
+      "_layout-CPlNMcA3.js"
     ]
   },
   "pages/index.tsx": {
-    "file": "capflies/_next/static/chunks/pages-D3dv18G1.js",
+    "file": "capflies/_next/static/chunks/pages-CaWzZb6y.js",
     "name": "pages",
     "src": "pages/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_vinext-CXup4KCC.js",
-      "_layout-Fq6deOY9.js",
-      "_matrix-D7SiPV6a.js"
+      "_vinext-hPdxre0R.js",
+      "_layout-CPlNMcA3.js",
+      "_matrix-DtqXjHNt.js"
     ]
   },
   "pages/liquidity.tsx": {
-    "file": "capflies/_next/static/chunks/liquidity-BzbtVRI0.js",
+    "file": "capflies/_next/static/chunks/liquidity-CeH0_k9c.js",
     "name": "liquidity",
     "src": "pages/liquidity.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-Fq6deOY9.js"
+      "_layout-CPlNMcA3.js"
     ]
   },
   "pages/markets.tsx": {
-    "file": "capflies/_next/static/chunks/markets-Dh5njdKH.js",
+    "file": "capflies/_next/static/chunks/markets-diIqm0Jm.js",
     "name": "markets",
     "src": "pages/markets.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-Fq6deOY9.js",
-      "_matrix-D7SiPV6a.js"
+      "_layout-CPlNMcA3.js",
+      "_matrix-DtqXjHNt.js"
     ]
   },
   "pages/methodology.tsx": {
-    "file": "capflies/_next/static/chunks/methodology-vP9q7sTJ.js",
+    "file": "capflies/_next/static/chunks/methodology-DsON6rF0.js",
     "name": "methodology",
     "src": "pages/methodology.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-Fq6deOY9.js"
+      "_layout-CPlNMcA3.js"
     ]
   },
   "virtual:vinext-client-entry": {
-    "file": "capflies/_next/static/chunks/index-B0Wb2QDj.js",
+    "file": "capflies/_next/static/chunks/index-BeHQM0TF.js",
     "name": "index",
     "src": "virtual:vinext-client-entry",
     "isEntry": true,
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js",
-      "_vinext-CXup4KCC.js"
+      "_vinext-hPdxre0R.js"
     ],
     "dynamicImports": [
       "pages/index.tsx",
@@ -120,7 +120,7 @@
       "pages/liquidity.tsx",
       "pages/markets.tsx",
       "pages/methodology.tsx",
-      "_vinext-CXup4KCC.js",
+      "_vinext-hPdxre0R.js",
       "pages/_app.tsx"
     ]
   }

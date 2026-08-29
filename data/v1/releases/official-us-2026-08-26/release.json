@@ -1,0 +1,624 @@
+{
+  "schemaVersion": 1,
+  "methodologyVersion": "0.3.0-official-us",
+  "release": "official-us-2026-08-26",
+  "generatedAt": "2026-08-29T09:12:39.926Z",
+  "dataThrough": "2026-08-26",
+  "liveSince": "2026-08-29",
+  "previousRelease": null,
+  "reconstructed": false,
+  "provenance": "official",
+  "sourceHealth": [
+    {
+      "sourceId": "imf-reserves-global",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "bis-gli-global",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-portfolio-equity-global",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-portfolio-debt-global",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "bis-claims-global",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-commodity-prices",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "cftc-commodities-global",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "cftc-bitcoin",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "fed-h41-total-assets",
+      "status": "current",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": null
+    },
+    {
+      "sourceId": "treasury-tga",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "nyfed-on-rrp",
+      "status": "current",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": null
+    },
+    {
+      "sourceId": "tic-equities-us",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "cftc-equity-index-us",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "tic-treasuries-us",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "fed-h15-10y",
+      "status": "current",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": null
+    },
+    {
+      "sourceId": "cftc-treasury-us",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "tic-agency-us",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "tic-corporate-us",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "cftc-commodities-us",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "ecb-balance-sheet",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-portfolio-equity-europe",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "ecb-yield-curve",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-portfolio-debt-europe",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "bis-claims-europe",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "boj-total-assets",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-reserves-asia",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-portfolio-equity-asia",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "bis-claims-asia",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-reserves-emerging",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "bis-gli-emerging",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "imf-portfolio-equity-emerging",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "cftc-msci-emerging",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "bis-claims-emerging",
+      "status": "failed",
+      "checkedAt": "2026-08-29T09:12:39.926Z",
+      "message": "No input in this release."
+    }
+  ],
+  "cells": [
+    {
+      "id": "global:liquidity",
+      "region": "global",
+      "assetClass": "liquidity",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured flow inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "global:equities",
+      "region": "global",
+      "assetClass": "equities",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "global:rates",
+      "region": "global",
+      "assetClass": "rates",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "global:credit",
+      "region": "global",
+      "assetClass": "credit",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured flow inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "global:real-assets",
+      "region": "global",
+      "assetClass": "real-assets",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured pressure inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "global:crypto",
+      "region": "global",
+      "assetClass": "crypto",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured pressure inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "us:liquidity",
+      "region": "us",
+      "assetClass": "liquidity",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "us:liquidity:flowTrend",
+        "region": "us",
+        "assetClass": "liquidity",
+        "track": "flowTrend",
+        "score": 47.7,
+        "asOf": "2026-08-26",
+        "releasedAt": "2026-08-28",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "constructed"
+        ],
+        "configuredInputs": 3,
+        "usableInputs": 2,
+        "sourceIds": [
+          "fed-h41-total-assets",
+          "nyfed-on-rrp"
+        ],
+        "reconstructed": false
+      },
+      "pressure": null,
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-08-26",
+      "note": null
+    },
+    {
+      "id": "us:equities",
+      "region": "us",
+      "assetClass": "equities",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled. Only 0 of 1 configured pressure inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "us:rates",
+      "region": "us",
+      "assetClass": "rates",
+      "state": "pressure-only",
+      "flowTrend": null,
+      "pressure": {
+        "id": "us:rates:pressure",
+        "region": "us",
+        "assetClass": "rates",
+        "track": "pressure",
+        "score": -42.9,
+        "asOf": "2026-08-27",
+        "releasedAt": "2026-08-27",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "inferred"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 1,
+        "sourceIds": [
+          "fed-h15-10y"
+        ],
+        "reconstructed": false
+      },
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-08-27",
+      "note": null
+    },
+    {
+      "id": "us:credit",
+      "region": "us",
+      "assetClass": "credit",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured flow inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "us:real-assets",
+      "region": "us",
+      "assetClass": "real-assets",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured pressure inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "us:crypto",
+      "region": "us",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "europe:liquidity",
+      "region": "europe",
+      "assetClass": "liquidity",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "europe:equities",
+      "region": "europe",
+      "assetClass": "equities",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "europe:rates",
+      "region": "europe",
+      "assetClass": "rates",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured pressure inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "europe:credit",
+      "region": "europe",
+      "assetClass": "credit",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured flow inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "europe:real-assets",
+      "region": "europe",
+      "assetClass": "real-assets",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "europe:crypto",
+      "region": "europe",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "asia:liquidity",
+      "region": "asia",
+      "assetClass": "liquidity",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured flow inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "asia:equities",
+      "region": "asia",
+      "assetClass": "equities",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "asia:rates",
+      "region": "asia",
+      "assetClass": "rates",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "asia:credit",
+      "region": "asia",
+      "assetClass": "credit",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "asia:real-assets",
+      "region": "asia",
+      "assetClass": "real-assets",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "asia:crypto",
+      "region": "asia",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "emerging:liquidity",
+      "region": "emerging",
+      "assetClass": "liquidity",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured flow inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "emerging:equities",
+      "region": "emerging",
+      "assetClass": "equities",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled. Only 0 of 1 configured pressure inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "emerging:rates",
+      "region": "emerging",
+      "assetClass": "rates",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "emerging:credit",
+      "region": "emerging",
+      "assetClass": "credit",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "emerging:real-assets",
+      "region": "emerging",
+      "assetClass": "real-assets",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "emerging:crypto",
+      "region": "emerging",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/capflies/data/v1/releases/official-us-2026-08-26/cells.csv",
+      "sha256": "4abb230e5a81bc0b5fb225d2aece5de7db115722c2bd5e76f3100f41736d8801"
+    },
+    {
+      "path": "/capflies/data/v1/releases/official-us-2026-08-26/inputs.csv",
+      "sha256": "2adc573fa73c15b805ee6e9d27310f2570fa471546fbe0ebacba1d2b2367d6b0"
+    }
+  ]
+}

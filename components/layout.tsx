@@ -15,6 +15,7 @@ const links = [
 
 export function Layout({ title, children }: { title: string; children: ReactNode }) {
   const { pathname } = useRouter();
+  const isOverview = pathname === "/";
   const staleSources = release.sourceHealth.filter((health) => health.status !== "current");
 
   return (
@@ -40,7 +41,9 @@ export function Layout({ title, children }: { title: string; children: ReactNode
         </nav>
       </header>
 
-      {release.provenance === "fixture" ? (
+      {isOverview ? <p className="sr-only">{`${release.provenance === "official" ? "Official" : "Fixture"} release ${release.release}.`}</p> : null}
+
+      {!isOverview && release.provenance === "fixture" ? (
         <p className="banner" role="status">
           <strong>Fixture release {release.release}.</strong> Every number on this site is hand-written demonstration
           data used to build and test the interface. No official source has been fetched yet, and nothing here
@@ -49,7 +52,7 @@ export function Layout({ title, children }: { title: string; children: ReactNode
         </p>
       ) : null}
 
-      {release.provenance === "official" ? (
+      {!isOverview && release.provenance === "official" ? (
         <p className="banner official" role="status">
           <strong>Official release {release.release}.</strong> This release uses validated public central-bank and Treasury TIC series delivered by FRED.
           Coverage is intentionally narrow: unsupported markets remain unavailable rather than being estimated. {" "}
@@ -57,7 +60,7 @@ export function Layout({ title, children }: { title: string; children: ReactNode
         </p>
       ) : null}
 
-      {release.provenance === "fixture" && staleSources.length ? (
+      {!isOverview && release.provenance === "fixture" && staleSources.length ? (
         <p className="banner subtle" role="status">
           {staleSources.length} of {release.sourceHealth.length} configured series are stale, expired, or missing in this
           release. Affected tracks are carried with their original as-of date or suppressed, never filled in.{" "}
@@ -67,7 +70,7 @@ export function Layout({ title, children }: { title: string; children: ReactNode
 
       <main id="main">{children}</main>
       <CellDetail />
-      <footer>
+      {!isOverview ? <footer>
         <p>
           Capflies is independent research software. It is not investment advice, not a forecast, and is not affiliated
           with or endorsed by any asset manager, data publisher, or index provider.
@@ -76,7 +79,7 @@ export function Layout({ title, children }: { title: string; children: ReactNode
           Data through {release.dataThrough} · release {release.release} · methodology {release.methodologyVersion} ·
           provenance {release.provenance}
         </p>
-      </footer>
+      </footer> : null}
     </>
   );
 }

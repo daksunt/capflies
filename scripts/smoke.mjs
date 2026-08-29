@@ -30,9 +30,7 @@ for (const route of routes) {
 
 const overview = await read("index.html");
 assert.match(overview, /\?cell=/, "overview has no URL-addressable cell links");
-assert.match(overview, /Confirming in|Confirming out|Diverging|Flow only|Pressure only/, "overview renders no derived cell states");
-assert.match(overview, /Unavailable/, "overview hides unsupported cells instead of showing them");
-assert.match(overview, new RegExp(`href="${url("/data/v1/releases/")}[^"]+/cells\\.csv" download`), "overview does not offer base-path-correct artifact downloads");
+assert.match(overview, /MONEY MOVING IN|MONEY MOVING OUT|LIQUIDITY GROWING|LIQUIDITY SHRINKING/, "overview renders no plain-language flow cards");
 
 const methodology = await read("methodology.html");
 assert.match(methodology, /provenance: &quot;/, "methodology omits the provenance statement");

@@ -1,4 +1,4 @@
-import { cells, fixtureInputs, release } from "./fixture-release.ts";
+import { cells, release, releaseInputs } from "./current-release.ts";
 import { sourceById, type MatrixCell, type SourceInput } from "./radar.ts";
 
 export const releaseDir = `data/v1/releases/${release.release}`;
@@ -42,7 +42,7 @@ export function cellsCsv(source: MatrixCell[] = cells): string {
   );
 }
 
-export function inputsCsv(source: SourceInput[] = fixtureInputs): string {
+export function inputsCsv(source: SourceInput[] = releaseInputs): string {
   return csv(
     ["source_id", "publisher", "region", "asset_class", "track", "evidence_kind", "transform", "as_of", "released_at", "score", "calibration_observations", "calibration_years", "reconstructed", "provenance"],
     source.map((input) => {

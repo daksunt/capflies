@@ -1,7 +1,7 @@
 import { Layout } from "../components/layout";
 import { RankedList } from "../components/matrix";
 import { CellLink, FreshnessNote, StateBadge } from "../components/signal";
-import { cells } from "../lib/fixture-release";
+import { cells } from "../lib/current-release";
 import { assetClasses, formatScore, label, rankCells, type AssetClassId } from "../lib/radar";
 
 const marketClasses = assetClasses.filter((assetClass) => assetClass !== "liquidity");

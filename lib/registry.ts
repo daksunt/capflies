@@ -24,6 +24,7 @@ export interface SourceDefinition {
   id: string;
   publisher:
     | "fed"
+    | "fred"
     | "ny-fed"
     | "treasury-fiscal"
     | "treasury-tic"
@@ -56,6 +57,7 @@ export interface SourceDefinition {
 
 export const publishers: Record<SourceDefinition["publisher"], { name: string; url: string }> = {
   fed: { name: "Federal Reserve Board", url: "https://www.federalreserve.gov/data.htm" },
+  fred: { name: "Federal Reserve Bank of St. Louis FRED", url: "https://fred.stlouisfed.org/" },
   "ny-fed": { name: "Federal Reserve Bank of New York", url: "https://www.newyorkfed.org/markets/desk-operations/reverse-repo" },
   "treasury-fiscal": { name: "U.S. Treasury Fiscal Data", url: "https://fiscaldata.treasury.gov/datasets/daily-treasury-statement/" },
   "treasury-tic": { name: "U.S. Treasury International Capital System", url: "https://home.treasury.gov/data/treasury-international-capital-tic-system" },
@@ -99,13 +101,13 @@ export const sources: SourceDefinition[] = [
   define({ id: "cftc-bitcoin", publisher: "cftc", dataset: "Commitments of Traders, Traders in Financial Futures", series: "Bitcoin futures net position", ...weekly, unit: "ratio", transform: "position-change-4w", evidenceKind: "positioning", region: "global", assetClass: "crypto", track: "pressure" }),
 
   // United States
-  define({ id: "fed-h41-total-assets", publisher: "fed", dataset: "H.4.1 Factors Affecting Reserve Balances", series: "Total assets of the Federal Reserve", ...weekly, unit: "USD", transform: "stock-change-13w", evidenceKind: "constructed", region: "us", assetClass: "liquidity", track: "flowTrend" }),
+  define({ id: "fed-h41-total-assets", publisher: "fred", dataset: "H.4.1 Factors Affecting Reserve Balances (FRED WALCL)", series: "Total assets of the Federal Reserve", ...weekly, unit: "USD", transform: "stock-change-13w", evidenceKind: "constructed", region: "us", assetClass: "liquidity", track: "flowTrend" }),
   define({ id: "treasury-tga", publisher: "treasury-fiscal", dataset: "Daily Treasury Statement", series: "Treasury General Account operating cash balance", frequency: "daily", staleAfterDays: 7, expireAfterDays: 21, unit: "USD", transform: "stock-change-13w", evidenceKind: "constructed", region: "us", assetClass: "liquidity", track: "flowTrend" }),
-  define({ id: "nyfed-on-rrp", publisher: "ny-fed", dataset: "Reverse repo operations", series: "Overnight reverse repurchase agreement award amount", frequency: "daily", staleAfterDays: 7, expireAfterDays: 21, unit: "USD", transform: "stock-change-13w", evidenceKind: "constructed", region: "us", assetClass: "liquidity", track: "flowTrend" }),
+  define({ id: "nyfed-on-rrp", publisher: "fred", dataset: "Overnight Reverse Repurchase Agreements (FRED RRPONTSYD)", series: "Overnight reverse repurchase agreement award amount", frequency: "daily", staleAfterDays: 7, expireAfterDays: 21, unit: "USD", transform: "stock-change-13w", evidenceKind: "constructed", region: "us", assetClass: "liquidity", track: "flowTrend" }),
   define({ id: "tic-equities-us", publisher: "treasury-tic", dataset: "TIC monthly transactions", series: "Net foreign purchases of U.S. equities", ...monthly, unit: "USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "equities", track: "flowTrend" }),
   define({ id: "cftc-equity-index-us", publisher: "cftc", dataset: "Commitments of Traders, Traders in Financial Futures", series: "E-mini S&P 500 asset manager net position", ...weekly, unit: "ratio", transform: "position-change-4w", evidenceKind: "positioning", region: "us", assetClass: "equities", track: "pressure" }),
   define({ id: "tic-treasuries-us", publisher: "treasury-tic", dataset: "TIC monthly transactions", series: "Net foreign purchases of U.S. Treasury bonds and notes", ...monthly, unit: "USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "rates", track: "flowTrend" }),
-  define({ id: "fed-h15-10y", publisher: "fed", dataset: "H.15 Selected Interest Rates", series: "10-year Treasury constant maturity yield", frequency: "daily", staleAfterDays: 7, expireAfterDays: 21, unit: "percent", transform: "yield-change-13w", evidenceKind: "inferred", region: "us", assetClass: "rates", track: "pressure" }),
+  define({ id: "fed-h15-10y", publisher: "fred", dataset: "H.15 Selected Interest Rates (FRED DGS10)", series: "10-year Treasury constant maturity yield", frequency: "daily", staleAfterDays: 7, expireAfterDays: 21, unit: "percent", transform: "yield-change-13w", evidenceKind: "inferred", region: "us", assetClass: "rates", track: "pressure" }),
   define({ id: "cftc-treasury-us", publisher: "cftc", dataset: "Commitments of Traders, Traders in Financial Futures", series: "10-year Treasury note asset manager net position", ...weekly, unit: "ratio", transform: "position-change-4w", evidenceKind: "positioning", region: "us", assetClass: "rates", track: "pressure" }),
   define({ id: "tic-agency-us", publisher: "treasury-tic", dataset: "TIC monthly transactions", series: "Net foreign purchases of U.S. agency bonds", ...monthly, unit: "USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "credit", track: "flowTrend" }),
   define({ id: "tic-corporate-us", publisher: "treasury-tic", dataset: "TIC monthly transactions", series: "Net foreign purchases of U.S. corporate bonds", ...monthly, unit: "USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "credit", track: "flowTrend" }),

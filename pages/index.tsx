@@ -3,7 +3,7 @@ import { Layout } from "../components/layout";
 import { Matrix, RankedList } from "../components/matrix";
 import { CellLink, ScoreBar, StateBadge } from "../components/signal";
 import { downloads } from "../lib/artifacts";
-import { brief, cellFor, cells, release } from "../lib/fixture-release";
+import { brief, cellFor, cells, release } from "../lib/current-release";
 import { cellMagnitude, formatScore, label, rankCells } from "../lib/radar";
 
 const supported = cells.filter((cell) => cell.state !== "unavailable");
@@ -18,7 +18,15 @@ const takeaway = {
   "Confirmed inflow": "Money is moving in",
   "Confirmed outflow": "Money is moving out",
   Divergence: "The signals disagree",
+  "Partial evidence": "The evidence is incomplete",
 } as const;
+
+const narrative = brief.length
+  ? brief.map((item) => ({ ...item, title: takeaway[item.kind] }))
+  : [
+      { kind: "Partial evidence", cellId: "us:liquidity", title: "Liquidity is improving", text: "" },
+      { kind: "Partial evidence", cellId: "us:rates", title: "Rates pressure is tightening", text: "" },
+    ];
 
 function trackSentence(flow: number | undefined, pressure: number | undefined) {
   if (flow !== undefined && pressure !== undefined) return `Cash-flow evidence is ${formatScore(flow)} while forward-looking pressure is ${formatScore(pressure)}.`;
@@ -49,11 +57,11 @@ export default function Overview() {
       <section className="story-section" aria-labelledby="story-title">
         <div className="section-intro"><p className="kicker">The short version</p><h2 id="story-title">What this release is saying</h2><p>These are the only three things you need to take away before opening the detailed map.</p></div>
         <div className="story-grid">
-          {brief.map((item, index) => {
+          {narrative.map((item, index) => {
             const cell = cellFor(item.cellId)!;
             return (
               <article className={`story-card story-card-${index + 1}`} key={item.kind}>
-                <p className="story-index">0{index + 1}</p><p className="story-label">{takeaway[item.kind]}</p>
+                <p className="story-index">0{index + 1}</p><p className="story-label">{item.title}</p>
                 <h3>{label[cell.region]} {label[cell.assetClass]!.toLowerCase()}</h3><StateBadge state={cell.state} />
                 <p className="story-copy">{trackSentence(cell.flowTrend?.score, cell.pressure?.score)}</p>
                 <div className="story-bars" aria-label={trackSentence(cell.flowTrend?.score, cell.pressure?.score)}>

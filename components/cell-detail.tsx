@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 import { downloads } from "../lib/artifacts";
-import { cellFor, inputsFor, release } from "../lib/fixture-release";
+import { cellFor, inputsFor, release } from "../lib/current-release";
 import { formatScore, label, sourceById, sourcesFor, type MatrixCell, type TrackSignal } from "../lib/radar";
 import { cellName, FreshnessNote, StateBadge, TrackReading } from "./signal";
 

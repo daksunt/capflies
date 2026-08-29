@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import type { ReactNode } from "react";
-import { release } from "../lib/fixture-release";
+import { release } from "../lib/current-release";
 import { CellDetail } from "./cell-detail";
 
 const links = [
@@ -46,6 +46,14 @@ export function Layout({ title, children }: { title: string; children: ReactNode
           data used to build and test the interface. No official source has been fetched yet, and nothing here
           describes real capital flows.{" "}
           <Link href="/methodology#status">Read the data status</Link>.
+        </p>
+      ) : null}
+
+      {release.provenance === "official" ? (
+        <p className="banner official" role="status">
+          <strong>Official release {release.release}.</strong> This release uses validated public Federal Reserve data.
+          Coverage is intentionally narrow: unsupported markets remain unavailable rather than being estimated. {" "}
+          <Link href="/methodology#status">Read the coverage</Link>.
         </p>
       ) : null}
 

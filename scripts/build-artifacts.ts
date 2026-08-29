@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { mkdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { basePath, cellsCsv, currentJson, currentPath, inputsCsv, manifestJson, releaseDir } from "../lib/artifacts.ts";
-import { release } from "../lib/fixture-release.ts";
+import { release } from "../lib/current-release.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const out = (file: string) => path.join(root, "public", file);

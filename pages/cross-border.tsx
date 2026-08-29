@@ -1,13 +1,13 @@
 import { Layout } from "../components/layout";
 import { CellLink, ScoreBar } from "../components/signal";
-import { cells, fixtureInputs } from "../lib/fixture-release";
+import { cells, releaseInputs } from "../lib/current-release";
 import { formatScore, freshnessOf, label, sourceById } from "../lib/radar";
-import { release as manifest } from "../lib/fixture-release";
+import { release as manifest } from "../lib/current-release";
 
 /** Cross-border evidence: reported external flows and cross-border bank claims. */
 const lanePublishers = new Set(["treasury-tic", "imf", "bis"]);
 
-const lanes = fixtureInputs
+const lanes = releaseInputs
   .map((input) => ({ input, source: sourceById(input.sourceId) }))
   .filter(({ source }) => lanePublishers.has(source.publisher) && source.track === "flowTrend")
   .map((lane) => ({

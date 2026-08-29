@@ -1,6 +1,6 @@
 import { Layout } from "../components/layout";
 import { downloads } from "../lib/artifacts";
-import { release } from "../lib/fixture-release";
+import { release } from "../lib/current-release";
 import { label, publishers, sources, thresholds } from "../lib/radar";
 
 const evidence: Array<[string, string]> = [
@@ -30,6 +30,7 @@ const transforms: Array<[string, string]> = [
 
 export default function Methodology() {
   const unhealthy = release.sourceHealth.filter((health) => health.status !== "current");
+  const fixture = release.provenance === "fixture";
 
   return (
     <Layout title="Methodology">
@@ -44,18 +45,13 @@ export default function Methodology() {
 
       <section className="panel prose" id="status" aria-labelledby="status-title">
         <p className="eyebrow">Data status</p>
-        <h2 id="status-title">This release is fixture data</h2>
-        <p>
-          Release {release.release} carries <code>provenance: "{release.provenance}"</code>. Its scores were written by
-          hand to exercise the derivation rules while the official source adapters are unimplemented. They are not
-          observations, not estimates, and not a description of any real market. The registry below lists the series
-          Capflies intends to consume; every entry is marked unverified until an adapter has fetched and validated the
-          exact selector, unit, and licence.
-        </p>
-        <p>
-          When official adapters land, provenance becomes <code>official</code>, the fixture notice disappears, and the
-          build refuses to publish an artifact that mixes the two.
-        </p>
+        <h2 id="status-title">{fixture ? "This release is fixture data" : "This is a narrow official release"}</h2>
+        {fixture ? (
+          <p>Release {release.release} carries <code>provenance: "fixture"</code>. Its scores were written by hand to exercise the derivation rules. They are not observations, estimates, or a description of any real market.</p>
+        ) : (
+          <p>Release {release.release} carries <code>provenance: "official"</code>. It contains only selected, checksummed Federal Reserve Bank of St. Louis FRED observations used by the U.S. liquidity and rates tracks. All other configured markets remain unavailable or insufficient; no fixture values are mixed into this release.</p>
+        )}
+        <p>The registry below lists the intended coverage. An entry stays unverified until an adapter has fetched and validated its exact selector, unit and licence.</p>
       </section>
 
       <section className="panel prose" aria-labelledby="tracks-title">

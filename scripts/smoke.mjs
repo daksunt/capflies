@@ -24,13 +24,13 @@ for (const route of routes) {
   if (basePath) assert.doesNotMatch(page, new RegExp(`(?:href|src)="/(?!${basePath.slice(1)}(?:["/?#]))`), `${route} has links that escape ${basePath}`);
   assert.match(page, /CAPFLIES/, `${route} is missing the shell`);
   assert.match(page, /Skip to main content/, `${route} is missing the skip link`);
-  assert.match(page, /Fixture release/, `${route} does not disclose fixture provenance`);
+  assert.match(page, /(?:Fixture|Official) release/, `${route} does not disclose release provenance`);
   assert.doesNotMatch(page, /\bLorem ipsum\b/i, `${route} contains placeholder copy`);
 }
 
 const overview = await read("index.html");
 assert.match(overview, /\?cell=/, "overview has no URL-addressable cell links");
-assert.match(overview, /Confirming in|Confirming out|Diverging/, "overview renders no derived cell states");
+assert.match(overview, /Confirming in|Confirming out|Diverging|Flow only|Pressure only/, "overview renders no derived cell states");
 assert.match(overview, /Unavailable/, "overview hides unsupported cells instead of showing them");
 assert.match(overview, new RegExp(`href="${url("/data/v1/releases/")}[^"]+/cells\\.csv" download`), "overview does not offer base-path-correct artifact downloads");
 
@@ -41,7 +41,7 @@ assert.match(methodology, /Source catalog/, "methodology omits the source catalo
 // Artifacts are present, well formed, and match the checksums the manifest declares.
 const current = JSON.parse(await read("data/v1/current.json"));
 assert.equal(current.schemaVersion, 1);
-assert.equal(current.provenance, "fixture");
+assert.ok(["fixture", "official"].includes(current.provenance), "current.json has unsupported provenance");
 
 assert.ok(current.manifestPath.startsWith(`${basePath}/data/v1/`), `current.json points at ${current.manifestPath}, which is outside ${basePath || "/"}`);
 
@@ -49,14 +49,14 @@ const manifestText = await read(local(current.manifestPath));
 assert.equal(createHash("sha256").update(manifestText).digest("hex"), current.manifestSha256, "current.json checksum does not match the manifest");
 
 const manifest = JSON.parse(manifestText);
-assert.equal(manifest.provenance, "fixture");
+assert.equal(manifest.provenance, current.provenance);
 assert.ok(manifest.cells.length > 0, "manifest carries no cells");
 for (const artifact of manifest.artifacts) {
   const contents = await read(local(artifact.path));
   assert.equal(createHash("sha256").update(contents).digest("hex"), artifact.sha256, `${artifact.path} checksum mismatch`);
   const rows = contents.trimEnd().split("\n");
   assert.ok(rows.length > 1, `${artifact.path} has no rows`);
-  for (const row of rows.slice(1)) assert.match(row, /,fixture$/, `${artifact.path} row is not marked as fixture`);
+  for (const row of rows.slice(1)) assert.match(row, new RegExp(`,${manifest.provenance}$`), `${artifact.path} row has wrong provenance`);
 }
 
 console.log(`Static smoke passed at base path ${basePath || "/"}: ${routes.length} routes, ${manifest.artifacts.length + 2} artifacts, checksums verified.`);

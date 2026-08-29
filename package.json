@@ -16,7 +16,12 @@
     "smoke:pages": "export NEXT_PUBLIC_BASE_PATH=/capflies && npm run build:pages && node scripts/smoke.mjs",
     "check": "tsc --noEmit && npm test && npm run build",
     "artifacts": "node scripts/build-artifacts.ts",
+    "refresh:official": "node scripts/refresh-official.mjs",
+    "build:official": "CAPFLIES_RELEASE=official npm run build",
+    "smoke:official": "CAPFLIES_RELEASE=official npm run smoke",
+    "smoke:official:pages": "CAPFLIES_RELEASE=official npm run smoke:pages",
     "publish": "node scripts/publish-pages.mjs"
+    ,"publish:official": "CAPFLIES_RELEASE=official npm run publish"
   },
   "dependencies": {
     "react": "^19.2.8",

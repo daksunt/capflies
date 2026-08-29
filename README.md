@@ -34,6 +34,8 @@ checksummed JSON/CSV release artifacts under `/data/v1/`.
 2. Push the source change to `main`: `git add <files> && git commit -m "..." && git push origin main`.
 3. Run `npm run publish`. It builds the Pages version, verifies its routes and artifacts, then updates the `gh-pages` branch that powers [the live site](https://daksunt.github.io/capflies/).
 
+For the verified official U.S. release, run `npm run refresh:official`, review `data/official-us.json`, then run `npm run publish:official`. The refresh fetches FRED WALCL, RRPONTSYD and DGS10, records source checksums, and publishes only U.S. liquidity and rates evidence. It does not fill the rest of the map.
+
 The current release intentionally uses fixture data. Do not replace `lib/fixture-release.ts` with guessed numbers: implement and validate the official source adapters first, then publish an `official`-provenance release.
 
 Capflies is independent research software. It is not affiliated with or endorsed by any asset manager, data publisher,

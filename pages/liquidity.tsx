@@ -1,6 +1,6 @@
 import { Layout } from "../components/layout";
 import { CellLink, FreshnessNote, StateBadge, TrackReading } from "../components/signal";
-import { cells } from "../lib/fixture-release";
+import { cells } from "../lib/current-release";
 import { label, regions, sourcesFor } from "../lib/radar";
 
 const liquidityCells = regions

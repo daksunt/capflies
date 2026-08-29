@@ -26,6 +26,15 @@ checksummed JSON/CSV release artifacts under `/data/v1/`.
 | `npm test` | Derivation and artifact unit tests |
 | `npm run check` | Type check, tests, and build |
 | `npm run smoke` | Build, then verify the exported routes and artifact checksums |
+| `npm run publish` | Rebuild, smoke-test, and publish the static site to GitHub Pages |
+
+## Updating the live site
+
+1. Make and verify a change locally with `npm run check`.
+2. Push the source change to `main`: `git add <files> && git commit -m "..." && git push origin main`.
+3. Run `npm run publish`. It builds the Pages version, verifies its routes and artifacts, then updates the `gh-pages` branch that powers [the live site](https://daksunt.github.io/capflies/).
+
+The current release intentionally uses fixture data. Do not replace `lib/fixture-release.ts` with guessed numbers: implement and validate the official source adapters first, then publish an `official`-provenance release.
 
 Capflies is independent research software. It is not affiliated with or endorsed by any asset manager, data publisher,
 or index provider, and it does not provide investment advice.

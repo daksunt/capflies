@@ -15,7 +15,8 @@
     "smoke": "npm run build && node scripts/smoke.mjs",
     "smoke:pages": "export NEXT_PUBLIC_BASE_PATH=/capflies && npm run build:pages && node scripts/smoke.mjs",
     "check": "tsc --noEmit && npm test && npm run build",
-    "artifacts": "node scripts/build-artifacts.ts"
+    "artifacts": "node scripts/build-artifacts.ts",
+    "publish": "node scripts/publish-pages.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

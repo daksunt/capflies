@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = {"__rewrites":{"beforeFiles":[{"source":"/:path*","destination":"/:path*","basePath":false}],"afterFiles":[],"fallback":[]},"sortedPages":[]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

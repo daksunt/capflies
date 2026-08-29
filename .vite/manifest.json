@@ -1,0 +1,126 @@
+{
+  "_framework-CNxXF_6U.js": {
+    "file": "capflies/_next/static/chunks/framework-CNxXF_6U.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-hePW80VL.js"
+    ]
+  },
+  "_layout-C5H1nAzx.js": {
+    "file": "capflies/_next/static/chunks/layout-C5H1nAzx.js",
+    "name": "layout",
+    "imports": [
+      "_rolldown-runtime-hePW80VL.js",
+      "_framework-CNxXF_6U.js",
+      "_vinext-E1LlJgIW.js"
+    ]
+  },
+  "_matrix-9VU7SoxR.js": {
+    "file": "capflies/_next/static/chunks/matrix-9VU7SoxR.js",
+    "name": "matrix",
+    "imports": [
+      "_framework-CNxXF_6U.js",
+      "_layout-C5H1nAzx.js"
+    ]
+  },
+  "_rolldown-runtime-hePW80VL.js": {
+    "file": "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
+    "name": "rolldown-runtime"
+  },
+  "_vinext-E1LlJgIW.js": {
+    "file": "capflies/_next/static/chunks/vinext-E1LlJgIW.js",
+    "name": "vinext",
+    "imports": [
+      "_rolldown-runtime-hePW80VL.js",
+      "_framework-CNxXF_6U.js"
+    ],
+    "dynamicImports": [
+      "_vinext-E1LlJgIW.js",
+      "_framework-CNxXF_6U.js"
+    ]
+  },
+  "pages/_app.tsx": {
+    "file": "capflies/_next/static/chunks/_app-BUrOP8tS.js",
+    "name": "_app",
+    "src": "pages/_app.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_framework-CNxXF_6U.js"
+    ],
+    "css": [
+      "capflies/_next/static/css/_app.CjL99HzE.css"
+    ]
+  },
+  "pages/cross-border.tsx": {
+    "file": "capflies/_next/static/chunks/cross-border-CcKm5Tfs.js",
+    "name": "cross-border",
+    "src": "pages/cross-border.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_framework-CNxXF_6U.js",
+      "_layout-C5H1nAzx.js"
+    ]
+  },
+  "pages/index.tsx": {
+    "file": "capflies/_next/static/chunks/pages-Cv0h6x8I.js",
+    "name": "pages",
+    "src": "pages/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_framework-CNxXF_6U.js",
+      "_layout-C5H1nAzx.js",
+      "_matrix-9VU7SoxR.js"
+    ]
+  },
+  "pages/liquidity.tsx": {
+    "file": "capflies/_next/static/chunks/liquidity-DZMzaKrq.js",
+    "name": "liquidity",
+    "src": "pages/liquidity.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_framework-CNxXF_6U.js",
+      "_layout-C5H1nAzx.js"
+    ]
+  },
+  "pages/markets.tsx": {
+    "file": "capflies/_next/static/chunks/markets-Bx3SXPnh.js",
+    "name": "markets",
+    "src": "pages/markets.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_framework-CNxXF_6U.js",
+      "_layout-C5H1nAzx.js",
+      "_matrix-9VU7SoxR.js"
+    ]
+  },
+  "pages/methodology.tsx": {
+    "file": "capflies/_next/static/chunks/methodology-T3RNxqd6.js",
+    "name": "methodology",
+    "src": "pages/methodology.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_framework-CNxXF_6U.js",
+      "_layout-C5H1nAzx.js"
+    ]
+  },
+  "virtual:vinext-client-entry": {
+    "file": "capflies/_next/static/chunks/index-BmVAjx7K.js",
+    "name": "index",
+    "src": "virtual:vinext-client-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-hePW80VL.js",
+      "_framework-CNxXF_6U.js",
+      "_vinext-E1LlJgIW.js"
+    ],
+    "dynamicImports": [
+      "pages/index.tsx",
+      "pages/cross-border.tsx",
+      "pages/liquidity.tsx",
+      "pages/markets.tsx",
+      "pages/methodology.tsx",
+      "_vinext-E1LlJgIW.js",
+      "pages/_app.tsx"
+    ]
+  }
+}

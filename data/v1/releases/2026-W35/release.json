@@ -1,0 +1,1016 @@
+{
+  "schemaVersion": 1,
+  "methodologyVersion": "0.2.0-fixture",
+  "release": "2026-W35",
+  "generatedAt": "2026-08-31T00:00:00.000Z",
+  "dataThrough": "2026-08-25",
+  "liveSince": null,
+  "previousRelease": null,
+  "reconstructed": true,
+  "provenance": "fixture",
+  "sourceHealth": [
+    {
+      "sourceId": "imf-reserves-global",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "bis-gli-global",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-portfolio-equity-global",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-portfolio-debt-global",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "bis-claims-global",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-commodity-prices",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "cftc-commodities-global",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "cftc-bitcoin",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "fed-h41-total-assets",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "treasury-tga",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "nyfed-on-rrp",
+      "status": "failed",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "tic-equities-us",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "cftc-equity-index-us",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "tic-treasuries-us",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "fed-h15-10y",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "cftc-treasury-us",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "tic-agency-us",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "tic-corporate-us",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "cftc-commodities-us",
+      "status": "expired",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": "Older than 35 days; excluded from derivation."
+    },
+    {
+      "sourceId": "ecb-balance-sheet",
+      "status": "stale",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": "Carried at its original as-of date 2026-08-04."
+    },
+    {
+      "sourceId": "imf-portfolio-equity-europe",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "ecb-yield-curve",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-portfolio-debt-europe",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "bis-claims-europe",
+      "status": "failed",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": "No input in this release."
+    },
+    {
+      "sourceId": "boj-total-assets",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-reserves-asia",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-portfolio-equity-asia",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "bis-claims-asia",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-reserves-emerging",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "bis-gli-emerging",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "imf-portfolio-equity-emerging",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "cftc-msci-emerging",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    },
+    {
+      "sourceId": "bis-claims-emerging",
+      "status": "current",
+      "checkedAt": "2026-08-31T00:00:00.000Z",
+      "message": null
+    }
+  ],
+  "cells": [
+    {
+      "id": "global:liquidity",
+      "region": "global",
+      "assetClass": "liquidity",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "global:liquidity:flowTrend",
+        "region": "global",
+        "assetClass": "liquidity",
+        "track": "flowTrend",
+        "score": 52,
+        "asOf": "2026-06-30",
+        "releasedAt": "2026-08-14",
+        "freshness": "current",
+        "confidence": "high",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured",
+          "constructed"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "imf-reserves-global",
+          "bis-gli-global"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "high",
+      "freshness": "current",
+      "asOf": "2026-06-30",
+      "note": null
+    },
+    {
+      "id": "global:equities",
+      "region": "global",
+      "assetClass": "equities",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "global:equities:flowTrend",
+        "region": "global",
+        "assetClass": "equities",
+        "track": "flowTrend",
+        "score": -31,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-07-24",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "imf-portfolio-equity-global"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "global:rates",
+      "region": "global",
+      "assetClass": "rates",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "global:credit",
+      "region": "global",
+      "assetClass": "credit",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "global:credit:flowTrend",
+        "region": "global",
+        "assetClass": "credit",
+        "track": "flowTrend",
+        "score": 32,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-07-24",
+        "freshness": "current",
+        "confidence": "high",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "imf-portfolio-debt-global",
+          "bis-claims-global"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "high",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "global:real-assets",
+      "region": "global",
+      "assetClass": "real-assets",
+      "state": "pressure-only",
+      "flowTrend": null,
+      "pressure": {
+        "id": "global:real-assets:pressure",
+        "region": "global",
+        "assetClass": "real-assets",
+        "track": "pressure",
+        "score": 55,
+        "asOf": "2026-07-31",
+        "releasedAt": "2026-08-21",
+        "freshness": "current",
+        "confidence": "high",
+        "acceleration": null,
+        "evidenceKinds": [
+          "inferred",
+          "positioning"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "imf-commodity-prices",
+          "cftc-commodities-global"
+        ],
+        "reconstructed": true
+      },
+      "confidence": "high",
+      "freshness": "current",
+      "asOf": "2026-07-31",
+      "note": null
+    },
+    {
+      "id": "global:crypto",
+      "region": "global",
+      "assetClass": "crypto",
+      "state": "pressure-only",
+      "flowTrend": null,
+      "pressure": {
+        "id": "global:crypto:pressure",
+        "region": "global",
+        "assetClass": "crypto",
+        "track": "pressure",
+        "score": -44,
+        "asOf": "2026-08-18",
+        "releasedAt": "2026-08-21",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "positioning"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "cftc-bitcoin"
+        ],
+        "reconstructed": true
+      },
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-08-18",
+      "note": null
+    },
+    {
+      "id": "us:liquidity",
+      "region": "us",
+      "assetClass": "liquidity",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "us:liquidity:flowTrend",
+        "region": "us",
+        "assetClass": "liquidity",
+        "track": "flowTrend",
+        "score": 61.5,
+        "asOf": "2026-08-19",
+        "releasedAt": "2026-08-25",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "constructed"
+        ],
+        "configuredInputs": 3,
+        "usableInputs": 2,
+        "sourceIds": [
+          "fed-h41-total-assets",
+          "treasury-tga"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-08-19",
+      "note": null
+    },
+    {
+      "id": "us:equities",
+      "region": "us",
+      "assetClass": "equities",
+      "state": "diverging",
+      "flowTrend": {
+        "id": "us:equities:flowTrend",
+        "region": "us",
+        "assetClass": "equities",
+        "track": "flowTrend",
+        "score": 37,
+        "asOf": "2026-06-30",
+        "releasedAt": "2026-08-18",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "tic-equities-us"
+        ],
+        "reconstructed": true
+      },
+      "pressure": {
+        "id": "us:equities:pressure",
+        "region": "us",
+        "assetClass": "equities",
+        "track": "pressure",
+        "score": -52,
+        "asOf": "2026-08-18",
+        "releasedAt": "2026-08-21",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "positioning"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "cftc-equity-index-us"
+        ],
+        "reconstructed": true
+      },
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-06-30",
+      "note": null
+    },
+    {
+      "id": "us:rates",
+      "region": "us",
+      "assetClass": "rates",
+      "state": "confirming-in",
+      "flowTrend": {
+        "id": "us:rates:flowTrend",
+        "region": "us",
+        "assetClass": "rates",
+        "track": "flowTrend",
+        "score": 44,
+        "asOf": "2026-06-30",
+        "releasedAt": "2026-08-18",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "tic-treasuries-us"
+        ],
+        "reconstructed": true
+      },
+      "pressure": {
+        "id": "us:rates:pressure",
+        "region": "us",
+        "assetClass": "rates",
+        "track": "pressure",
+        "score": 48,
+        "asOf": "2026-08-18",
+        "releasedAt": "2026-08-25",
+        "freshness": "current",
+        "confidence": "high",
+        "acceleration": null,
+        "evidenceKinds": [
+          "inferred",
+          "positioning"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "fed-h15-10y",
+          "cftc-treasury-us"
+        ],
+        "reconstructed": true
+      },
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-06-30",
+      "note": null
+    },
+    {
+      "id": "us:credit",
+      "region": "us",
+      "assetClass": "credit",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "us:credit:flowTrend",
+        "region": "us",
+        "assetClass": "credit",
+        "track": "flowTrend",
+        "score": -28.5,
+        "asOf": "2026-06-30",
+        "releasedAt": "2026-08-18",
+        "freshness": "current",
+        "confidence": "high",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "tic-agency-us",
+          "tic-corporate-us"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "high",
+      "freshness": "current",
+      "asOf": "2026-06-30",
+      "note": null
+    },
+    {
+      "id": "us:real-assets",
+      "region": "us",
+      "assetClass": "real-assets",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 1 configured pressure inputs were usable (1 past its expiry window). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "us:crypto",
+      "region": "us",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "europe:liquidity",
+      "region": "europe",
+      "assetClass": "liquidity",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "europe:liquidity:flowTrend",
+        "region": "europe",
+        "assetClass": "liquidity",
+        "track": "flowTrend",
+        "score": -47,
+        "asOf": "2026-08-04",
+        "releasedAt": "2026-08-05",
+        "freshness": "stale",
+        "confidence": "low",
+        "acceleration": null,
+        "evidenceKinds": [
+          "constructed"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "ecb-balance-sheet"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "low",
+      "freshness": "stale",
+      "asOf": "2026-08-04",
+      "note": null
+    },
+    {
+      "id": "europe:equities",
+      "region": "europe",
+      "assetClass": "equities",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "europe:equities:flowTrend",
+        "region": "europe",
+        "assetClass": "equities",
+        "track": "flowTrend",
+        "score": 18,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-07-24",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "imf-portfolio-equity-europe"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "europe:rates",
+      "region": "europe",
+      "assetClass": "rates",
+      "state": "pressure-only",
+      "flowTrend": null,
+      "pressure": {
+        "id": "europe:rates:pressure",
+        "region": "europe",
+        "assetClass": "rates",
+        "track": "pressure",
+        "score": 51,
+        "asOf": "2026-08-24",
+        "releasedAt": "2026-08-25",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "inferred"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "ecb-yield-curve"
+        ],
+        "reconstructed": true
+      },
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-08-24",
+      "note": null
+    },
+    {
+      "id": "europe:credit",
+      "region": "europe",
+      "assetClass": "credit",
+      "state": "insufficient",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "Only 0 of 2 configured flow inputs were usable (1 without the required calibration history, 1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+    },
+    {
+      "id": "europe:real-assets",
+      "region": "europe",
+      "assetClass": "real-assets",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "europe:crypto",
+      "region": "europe",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "asia:liquidity",
+      "region": "asia",
+      "assetClass": "liquidity",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "asia:liquidity:flowTrend",
+        "region": "asia",
+        "assetClass": "liquidity",
+        "track": "flowTrend",
+        "score": 31,
+        "asOf": "2026-06-30",
+        "releasedAt": "2026-08-20",
+        "freshness": "current",
+        "confidence": "high",
+        "acceleration": null,
+        "evidenceKinds": [
+          "constructed",
+          "measured"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "boj-total-assets",
+          "imf-reserves-asia"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "high",
+      "freshness": "current",
+      "asOf": "2026-06-30",
+      "note": null
+    },
+    {
+      "id": "asia:equities",
+      "region": "asia",
+      "assetClass": "equities",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "asia:equities:flowTrend",
+        "region": "asia",
+        "assetClass": "equities",
+        "track": "flowTrend",
+        "score": 12,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-07-24",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "imf-portfolio-equity-asia"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "asia:rates",
+      "region": "asia",
+      "assetClass": "rates",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "asia:credit",
+      "region": "asia",
+      "assetClass": "credit",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "asia:credit:flowTrend",
+        "region": "asia",
+        "assetClass": "credit",
+        "track": "flowTrend",
+        "score": -19,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-07-17",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "bis-claims-asia"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "asia:real-assets",
+      "region": "asia",
+      "assetClass": "real-assets",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "asia:crypto",
+      "region": "asia",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "emerging:liquidity",
+      "region": "emerging",
+      "assetClass": "liquidity",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "emerging:liquidity:flowTrend",
+        "region": "emerging",
+        "assetClass": "liquidity",
+        "track": "flowTrend",
+        "score": -32,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-08-14",
+        "freshness": "current",
+        "confidence": "high",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured",
+          "constructed"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "imf-reserves-emerging",
+          "bis-gli-emerging"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "high",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "emerging:equities",
+      "region": "emerging",
+      "assetClass": "equities",
+      "state": "confirming-out",
+      "flowTrend": {
+        "id": "emerging:equities:flowTrend",
+        "region": "emerging",
+        "assetClass": "equities",
+        "track": "flowTrend",
+        "score": -55,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-07-24",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "imf-portfolio-equity-emerging"
+        ],
+        "reconstructed": true
+      },
+      "pressure": {
+        "id": "emerging:equities:pressure",
+        "region": "emerging",
+        "assetClass": "equities",
+        "track": "pressure",
+        "score": -68,
+        "asOf": "2026-08-18",
+        "releasedAt": "2026-08-21",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "positioning"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "cftc-msci-emerging"
+        ],
+        "reconstructed": true
+      },
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "emerging:rates",
+      "region": "emerging",
+      "assetClass": "rates",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "emerging:credit",
+      "region": "emerging",
+      "assetClass": "credit",
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "emerging:credit:flowTrend",
+        "region": "emerging",
+        "assetClass": "credit",
+        "track": "flowTrend",
+        "score": -41,
+        "asOf": "2026-03-31",
+        "releasedAt": "2026-07-17",
+        "freshness": "current",
+        "confidence": "medium",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "bis-claims-emerging"
+        ],
+        "reconstructed": true
+      },
+      "pressure": null,
+      "confidence": "medium",
+      "freshness": "current",
+      "asOf": "2026-03-31",
+      "note": null
+    },
+    {
+      "id": "emerging:real-assets",
+      "region": "emerging",
+      "assetClass": "real-assets",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    },
+    {
+      "id": "emerging:crypto",
+      "region": "emerging",
+      "assetClass": "crypto",
+      "state": "unavailable",
+      "flowTrend": null,
+      "pressure": null,
+      "confidence": null,
+      "freshness": null,
+      "asOf": null,
+      "note": "No official v1 source is configured for this combination."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/capflies/data/v1/releases/2026-W35/cells.csv",
+      "sha256": "b3ce336bffe1c870fba1c13ca06c1904e255bd1132d9b2c18f9bfed6eee82b4f"
+    },
+    {
+      "path": "/capflies/data/v1/releases/2026-W35/inputs.csv",
+      "sha256": "f4e0395dce26ef0d922779adaf245369d77be51d55673dcb242550672d7a146f"
+    }
+  ]
+}

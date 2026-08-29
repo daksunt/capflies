@@ -6,33 +6,33 @@
       "_rolldown-runtime-hePW80VL.js"
     ]
   },
-  "_layout-C4aa5Sjm.js": {
-    "file": "capflies/_next/static/chunks/layout-C4aa5Sjm.js",
-    "name": "layout",
-    "imports": [
-      "_rolldown-runtime-hePW80VL.js",
-      "_framework-CNxXF_6U.js",
-      "_vinext-CpL8j7Md.js"
-    ]
-  },
   "_rolldown-runtime-hePW80VL.js": {
     "file": "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "name": "rolldown-runtime"
   },
-  "_vinext-CpL8j7Md.js": {
-    "file": "capflies/_next/static/chunks/vinext-CpL8j7Md.js",
+  "_signal-gY_y2WAL.js": {
+    "file": "capflies/_next/static/chunks/signal-gY_y2WAL.js",
+    "name": "signal",
+    "imports": [
+      "_rolldown-runtime-hePW80VL.js",
+      "_framework-CNxXF_6U.js",
+      "_vinext-CZ_C8P2f.js"
+    ]
+  },
+  "_vinext-CZ_C8P2f.js": {
+    "file": "capflies/_next/static/chunks/vinext-CZ_C8P2f.js",
     "name": "vinext",
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js"
     ],
     "dynamicImports": [
-      "_vinext-CpL8j7Md.js",
+      "_vinext-CZ_C8P2f.js",
       "_framework-CNxXF_6U.js"
     ]
   },
   "pages/_app.tsx": {
-    "file": "capflies/_next/static/chunks/_app-AfYrQ3Qe.js",
+    "file": "capflies/_next/static/chunks/_app-CK5cmhW4.js",
     "name": "_app",
     "src": "pages/_app.tsx",
     "isDynamicEntry": true,
@@ -40,68 +40,68 @@
       "_framework-CNxXF_6U.js"
     ],
     "css": [
-      "capflies/_next/static/css/_app.tz7iiutQ.css"
+      "capflies/_next/static/css/_app.C7zJBbbZ.css"
     ]
   },
   "pages/cross-border.tsx": {
-    "file": "capflies/_next/static/chunks/cross-border-DAU5Qfgz.js",
+    "file": "capflies/_next/static/chunks/cross-border-BKnSnUAv.js",
     "name": "cross-border",
     "src": "pages/cross-border.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-C4aa5Sjm.js"
+      "_signal-gY_y2WAL.js"
     ]
   },
   "pages/index.tsx": {
-    "file": "capflies/_next/static/chunks/pages-CuGiq8dh.js",
+    "file": "capflies/_next/static/chunks/pages-CmHelAyQ.js",
     "name": "pages",
     "src": "pages/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-C4aa5Sjm.js"
+      "_signal-gY_y2WAL.js"
     ]
   },
   "pages/liquidity.tsx": {
-    "file": "capflies/_next/static/chunks/liquidity-CMY0RAiw.js",
+    "file": "capflies/_next/static/chunks/liquidity-C2SREcS8.js",
     "name": "liquidity",
     "src": "pages/liquidity.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-C4aa5Sjm.js"
+      "_signal-gY_y2WAL.js"
     ]
   },
   "pages/markets.tsx": {
-    "file": "capflies/_next/static/chunks/markets-BEDQiFjH.js",
+    "file": "capflies/_next/static/chunks/markets-CkctVxsN.js",
     "name": "markets",
     "src": "pages/markets.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-C4aa5Sjm.js"
+      "_signal-gY_y2WAL.js"
     ]
   },
   "pages/methodology.tsx": {
-    "file": "capflies/_next/static/chunks/methodology-DyLvThuk.js",
+    "file": "capflies/_next/static/chunks/methodology-8eUwvZCM.js",
     "name": "methodology",
     "src": "pages/methodology.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-C4aa5Sjm.js"
+      "_signal-gY_y2WAL.js"
     ]
   },
   "virtual:vinext-client-entry": {
-    "file": "capflies/_next/static/chunks/index-DHqo_TBX.js",
+    "file": "capflies/_next/static/chunks/index-BG14ahGO.js",
     "name": "index",
     "src": "virtual:vinext-client-entry",
     "isEntry": true,
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js",
-      "_vinext-CpL8j7Md.js"
+      "_vinext-CZ_C8P2f.js"
     ],
     "dynamicImports": [
       "pages/index.tsx",
@@ -109,7 +109,7 @@
       "pages/liquidity.tsx",
       "pages/markets.tsx",
       "pages/methodology.tsx",
-      "_vinext-CpL8j7Md.js",
+      "_vinext-CZ_C8P2f.js",
       "pages/_app.tsx"
     ]
   }

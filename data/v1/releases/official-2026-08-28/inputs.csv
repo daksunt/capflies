@@ -4,3 +4,7 @@ nyfed-on-rrp,fred,us,liquidity,flowTrend,constructed,stock-change-13w,2026-08-28
 fed-h15-10y,fred,us,rates,pressure,inferred,yield-change-13w,2026-08-27,2026-08-27,-42.9,2498,9,false,official
 ecb-balance-sheet,fred,europe,liquidity,flowTrend,constructed,stock-change-13w,2026-08-21,2026-08-21,-71.2,521,9,false,official
 boj-total-assets,fred,asia,liquidity,flowTrend,constructed,stock-change-13w,2026-07-01,2026-07-01,-72.5,120,9,false,official
+tic-equities-us,fred,us,equities,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,100,120,9,false,official
+tic-treasuries-us,fred,us,rates,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,57.5,120,9,false,official
+tic-agency-us,fred,us,credit,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,60,120,9,false,official
+tic-corporate-us,fred,us,credit,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,87.5,120,9,false,official

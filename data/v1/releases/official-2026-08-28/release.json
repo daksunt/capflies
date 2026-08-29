@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "methodologyVersion": "0.3.0-official",
   "release": "official-2026-08-28",
-  "generatedAt": "2026-08-29T09:25:25.479Z",
+  "generatedAt": "2026-08-29T09:27:39.800Z",
   "dataThrough": "2026-08-28",
   "liveSince": "2026-08-29",
   "previousRelease": null,
@@ -12,199 +12,199 @@
     {
       "sourceId": "imf-reserves-global",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "bis-gli-global",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "imf-portfolio-equity-global",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "imf-portfolio-debt-global",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "bis-claims-global",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "imf-commodity-prices",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "cftc-commodities-global",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "cftc-bitcoin",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "fed-h41-total-assets",
       "status": "current",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": null
     },
     {
       "sourceId": "treasury-tga",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "nyfed-on-rrp",
       "status": "current",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": null
     },
     {
       "sourceId": "tic-equities-us",
-      "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
-      "message": "No input in this release."
+      "status": "stale",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
+      "message": "Carried at its original as-of date 2026-06-01."
     },
     {
       "sourceId": "cftc-equity-index-us",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "tic-treasuries-us",
-      "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
-      "message": "No input in this release."
+      "status": "stale",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
+      "message": "Carried at its original as-of date 2026-06-01."
     },
     {
       "sourceId": "fed-h15-10y",
       "status": "current",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": null
     },
     {
       "sourceId": "cftc-treasury-us",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "tic-agency-us",
-      "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
-      "message": "No input in this release."
+      "status": "stale",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
+      "message": "Carried at its original as-of date 2026-06-01."
     },
     {
       "sourceId": "tic-corporate-us",
-      "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
-      "message": "No input in this release."
+      "status": "stale",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
+      "message": "Carried at its original as-of date 2026-06-01."
     },
     {
       "sourceId": "cftc-commodities-us",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "ecb-balance-sheet",
       "status": "current",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": null
     },
     {
       "sourceId": "imf-portfolio-equity-europe",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "ecb-yield-curve",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "imf-portfolio-debt-europe",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "bis-claims-europe",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "boj-total-assets",
       "status": "current",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": null
     },
     {
       "sourceId": "imf-reserves-asia",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "imf-portfolio-equity-asia",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "bis-claims-asia",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "imf-reserves-emerging",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "bis-gli-emerging",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "imf-portfolio-equity-emerging",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "cftc-msci-emerging",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     },
     {
       "sourceId": "bis-claims-emerging",
       "status": "failed",
-      "checkedAt": "2026-08-29T09:25:25.479Z",
+      "checkedAt": "2026-08-29T09:27:39.800Z",
       "message": "No input in this release."
     }
   ],
@@ -318,20 +318,60 @@
       "id": "us:equities",
       "region": "us",
       "assetClass": "equities",
-      "state": "insufficient",
-      "flowTrend": null,
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "us:equities:flowTrend",
+        "region": "us",
+        "assetClass": "equities",
+        "track": "flowTrend",
+        "score": 100,
+        "asOf": "2026-06-01",
+        "releasedAt": "2026-06-01",
+        "freshness": "stale",
+        "confidence": "low",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "tic-equities-us"
+        ],
+        "reconstructed": false
+      },
       "pressure": null,
-      "confidence": null,
-      "freshness": null,
-      "asOf": null,
-      "note": "Only 0 of 1 configured flow inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled. Only 0 of 1 configured pressure inputs were usable (1 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+      "confidence": "low",
+      "freshness": "stale",
+      "asOf": "2026-06-01",
+      "note": null
     },
     {
       "id": "us:rates",
       "region": "us",
       "assetClass": "rates",
-      "state": "pressure-only",
-      "flowTrend": null,
+      "state": "diverging",
+      "flowTrend": {
+        "id": "us:rates:flowTrend",
+        "region": "us",
+        "assetClass": "rates",
+        "track": "flowTrend",
+        "score": 57.5,
+        "asOf": "2026-06-01",
+        "releasedAt": "2026-06-01",
+        "freshness": "stale",
+        "confidence": "low",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 1,
+        "usableInputs": 1,
+        "sourceIds": [
+          "tic-treasuries-us"
+        ],
+        "reconstructed": false
+      },
       "pressure": {
         "id": "us:rates:pressure",
         "region": "us",
@@ -353,22 +393,43 @@
         ],
         "reconstructed": false
       },
-      "confidence": "medium",
-      "freshness": "current",
-      "asOf": "2026-08-27",
+      "confidence": "low",
+      "freshness": "stale",
+      "asOf": "2026-06-01",
       "note": null
     },
     {
       "id": "us:credit",
       "region": "us",
       "assetClass": "credit",
-      "state": "insufficient",
-      "flowTrend": null,
+      "state": "flow-only",
+      "flowTrend": {
+        "id": "us:credit:flowTrend",
+        "region": "us",
+        "assetClass": "credit",
+        "track": "flowTrend",
+        "score": 73.8,
+        "asOf": "2026-06-01",
+        "releasedAt": "2026-06-01",
+        "freshness": "stale",
+        "confidence": "low",
+        "acceleration": null,
+        "evidenceKinds": [
+          "measured"
+        ],
+        "configuredInputs": 2,
+        "usableInputs": 2,
+        "sourceIds": [
+          "tic-agency-us",
+          "tic-corporate-us"
+        ],
+        "reconstructed": false
+      },
       "pressure": null,
-      "confidence": null,
-      "freshness": null,
-      "asOf": null,
-      "note": "Only 0 of 2 configured flow inputs were usable (2 not reported in this release). Below the 50% coverage rule, so the track is suppressed rather than partly filled."
+      "confidence": "low",
+      "freshness": "stale",
+      "asOf": "2026-06-01",
+      "note": null
     },
     {
       "id": "us:real-assets",
@@ -654,11 +715,11 @@
   "artifacts": [
     {
       "path": "/capflies/data/v1/releases/official-2026-08-28/cells.csv",
-      "sha256": "61812dad425ca53c043df6415da0500ba0f23c76486b5283bfaf69ab2971e5a5"
+      "sha256": "696af65ccff9e8718b4112275f4966359f1db5af276d67a03515f38ace733e26"
     },
     {
       "path": "/capflies/data/v1/releases/official-2026-08-28/inputs.csv",
-      "sha256": "efc965d02c13e81aecaa4b787b74ebc3ee36cfe8bbb6433f97446e046e1b17c8"
+      "sha256": "54660bb5902c42c60adc534589b180242f761af330c40f00297cfaf7f9a59668"
     }
   ]
 }

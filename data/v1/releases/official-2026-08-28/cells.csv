@@ -6,9 +6,9 @@ global,credit,insufficient,,,,,,official
 global,real-assets,insufficient,,,,,,official
 global,crypto,insufficient,,,,,,official
 us,liquidity,flow-only,47.7,,medium,current,2026-08-26,official
-us,equities,insufficient,,,,,,official
-us,rates,pressure-only,,-42.9,medium,current,2026-08-27,official
-us,credit,insufficient,,,,,,official
+us,equities,flow-only,100,,low,stale,2026-06-01,official
+us,rates,diverging,57.5,-42.9,low,stale,2026-06-01,official
+us,credit,flow-only,73.8,,low,stale,2026-06-01,official
 us,real-assets,insufficient,,,,,,official
 us,crypto,unavailable,,,,,,official
 europe,liquidity,flow-only,-71.2,,medium,current,2026-08-21,official

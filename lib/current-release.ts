@@ -9,4 +9,4 @@ export const release = selected.release;
 export const brief = selected.brief;
 export const cellFor = selected.cellFor;
 export const inputsFor = selected.inputsFor;
-export const releaseInputs = process.env.CAPFLIES_RELEASE === "official" ? official.officialInputs : fixture.fixtureInputs;
+export const releaseInputs = process.env.CAPFLIES_RELEASE === "official" ? official.releaseInputs : fixture.fixtureInputs;

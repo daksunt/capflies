@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { cellFor, officialInputs, release } from "../lib/official-release.ts";
+import { cellFor, crossBorderInputs, officialInputs, release } from "../lib/official-release.ts";
 
 test("official release never mixes fixture provenance", () => {
   assert.equal(release.provenance, "official");
@@ -24,4 +24,10 @@ test("official U.S. flows are derived from validated inputs", () => {
 test("official release includes validated European and Asian liquidity", () => {
   assert.deepEqual(cellFor("europe:liquidity")?.flowTrend?.sourceIds, ["ecb-balance-sheet"]);
   assert.deepEqual(cellFor("asia:liquidity")?.flowTrend?.sourceIds, ["boj-total-assets"]);
+});
+
+test("official release includes regional Treasury TIC lanes", () => {
+  assert.deepEqual(crossBorderInputs.map((input) => input.sourceId), [
+    "tic-europe-us-securities", "tic-asia-us-securities", "tic-japan-us-securities", "tic-china-us-securities",
+  ]);
 });

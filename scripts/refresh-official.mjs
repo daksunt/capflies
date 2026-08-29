@@ -15,6 +15,10 @@ const catalog = [
   { id: "FORLTTREASNET69995", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
   { id: "FORLTAGCYNET69995", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
   { id: "FORLTCORPNET69995", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
+  { id: "FORLTTOTALNET19992", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
+  { id: "FORLTTOTALNET49999", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
+  { id: "FORLTTOTALNET42609", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
+  { id: "FORLTTOTALNET41408", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
 ];
 
 async function fetchSeries(definition) {

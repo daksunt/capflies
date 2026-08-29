@@ -134,6 +134,14 @@ export const sources: SourceDefinition[] = [
   define({ id: "bis-claims-emerging", publisher: "bis", dataset: "Locational banking statistics", series: "Cross-border claims on emerging market residents", ...quarterly, unit: "USD", transform: "stock-change-13w", evidenceKind: "measured", region: "emerging", assetClass: "credit", track: "flowTrend" }),
 ];
 
+/** Extra lane-level sources: shown on the Flows board, never folded into a regional market cell. */
+export const crossBorderSources: SourceDefinition[] = [
+  define({ id: "tic-europe-us-securities", publisher: "fred", dataset: "Treasury International Capital CSLT (FRED FORLTTOTALNET19992)", series: "Europe net purchases of U.S. long-term securities", ...monthly, unit: "millions of USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "equities", track: "flowTrend", verified: true }),
+  define({ id: "tic-asia-us-securities", publisher: "fred", dataset: "Treasury International Capital CSLT (FRED FORLTTOTALNET49999)", series: "Asia net purchases of U.S. long-term securities", ...monthly, unit: "millions of USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "equities", track: "flowTrend", verified: true }),
+  define({ id: "tic-japan-us-securities", publisher: "fred", dataset: "Treasury International Capital CSLT (FRED FORLTTOTALNET42609)", series: "Japan net purchases of U.S. long-term securities", ...monthly, unit: "millions of USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "equities", track: "flowTrend", verified: true }),
+  define({ id: "tic-china-us-securities", publisher: "fred", dataset: "Treasury International Capital CSLT (FRED FORLTTOTALNET41408)", series: "China net purchases of U.S. long-term securities", ...monthly, unit: "millions of USD", transform: "signed-flow", evidenceKind: "measured", region: "us", assetClass: "equities", track: "flowTrend", verified: true }),
+];
+
 export function sourcesFor(region: RegionId, assetClass: AssetClassId, track?: Track): SourceDefinition[] {
   return sources.filter(
     (source) =>
@@ -144,7 +152,7 @@ export function sourcesFor(region: RegionId, assetClass: AssetClassId, track?: T
 }
 
 export function sourceById(id: string): SourceDefinition {
-  const source = sources.find((item) => item.id === id);
+  const source = [...sources, ...crossBorderSources].find((item) => item.id === id);
   if (!source) throw new Error(`Unknown source: ${id}`);
   return source;
 }

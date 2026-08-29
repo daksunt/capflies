@@ -36,6 +36,14 @@ export const officialInputs: SourceInput[] = [
   asInput("tic-corporate-us", "FORLTCORPNET69995"),
 ];
 
+export const crossBorderInputs: SourceInput[] = [
+  asInput("tic-europe-us-securities", "FORLTTOTALNET19992"),
+  asInput("tic-asia-us-securities", "FORLTTOTALNET49999"),
+  asInput("tic-japan-us-securities", "FORLTTOTALNET42609"),
+  asInput("tic-china-us-securities", "FORLTTOTALNET41408"),
+];
+export const releaseInputs: SourceInput[] = [...officialInputs, ...crossBorderInputs];
+
 export const release: ReleaseManifest = {
   schemaVersion: 1,
   methodologyVersion: "0.3.0-official",

@@ -8,6 +8,10 @@ const names: Record<string, string> = {
   "tic-treasuries-us": "United States\nTreasuries",
   "tic-agency-us": "United States\nAgency bonds",
   "tic-corporate-us": "United States\nCorporate bonds",
+  "tic-europe-us-securities": "Europe →\nUnited States",
+  "tic-asia-us-securities": "Asia →\nUnited States",
+  "tic-japan-us-securities": "Japan →\nUnited States",
+  "tic-china-us-securities": "China →\nUnited States",
 };
 const flows = releaseInputs
   .filter((input) => input.sourceId in names && sourceById(input.sourceId).track === "flowTrend")

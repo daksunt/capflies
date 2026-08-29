@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "provenance": "official",
   "publisher": "Federal Reserve Bank of St. Louis FRED",
-  "retrievedAt": "2026-08-29T09:27:39.800Z",
+  "retrievedAt": "2026-08-29T10:10:15.600Z",
   "dataThrough": "2026-08-28",
   "sources": [
     {
@@ -119,6 +119,58 @@
       "periodEnd": "2026-06-01",
       "impulse": 107178,
       "score": 87.5,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTTOTALNET19992",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTTOTALNET19992",
+      "checksum": "710d9bf9d2a83da5a5142d74fac4bd9198ae9a02f1db3acacd05a7bcf28c4927",
+      "periodEnd": "2026-06-01",
+      "impulse": 272032,
+      "score": 91.7,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTTOTALNET49999",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTTOTALNET49999",
+      "checksum": "045f7c5003b5965a4e6e27caaf3ade7c5687ca68ed705b1c0544916f9a3db83b",
+      "periodEnd": "2026-06-01",
+      "impulse": 185275,
+      "score": 98.3,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTTOTALNET42609",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTTOTALNET42609",
+      "checksum": "f3a91ac6fb8b0703794a2c06581adb06f365e2e57131ec3ec75a9cd80df7209a",
+      "periodEnd": "2026-06-01",
+      "impulse": 10249,
+      "score": 27.5,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTTOTALNET41408",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTTOTALNET41408",
+      "checksum": "1e68f243113cc3dea123f0777616db56a85ac79cf7e07e585745b65b9e6873f1",
+      "periodEnd": "2026-06-01",
+      "impulse": -12981,
+      "score": -16.7,
       "calibrationObservations": 120,
       "calibrationYears": 9
     }

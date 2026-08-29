@@ -1,5 +1,5 @@
 import { Layout } from "../components/layout";
-import { CellLink, ScoreBar } from "../components/signal";
+import { ScoreBar } from "../components/signal";
 import { cells, release } from "../lib/current-release";
 import { cellMagnitude, formatScore, label, rankCells } from "../lib/radar";
 
@@ -27,13 +27,13 @@ export default function Overview() {
             const flow = cell.flowTrend!;
             const copy = words(cell);
             return (
-              <CellLink cell={cell} className={`flow-card tone-${copy.tone}`} key={cell.id}>
+              <article className={`flow-card tone-${copy.tone}`} key={cell.id}>
                 <span className="flow-arrow" aria-hidden="true">{copy.arrow}</span>
                 <span className="flow-direction">{copy.direction}</span>
                 <h2>{label[cell.region]}<br />{label[cell.assetClass]}</h2>
                 <span className="flow-score">{formatScore(flow.score)}</span>
                 <ScoreBar score={flow.score} />
-              </CellLink>
+              </article>
             );
           })}
         </div>

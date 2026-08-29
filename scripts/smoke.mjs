@@ -29,12 +29,11 @@ for (const route of routes) {
 }
 
 const overview = await read("index.html");
-assert.match(overview, /\?cell=/, "overview has no URL-addressable cell links");
 assert.match(overview, /MONEY MOVING IN|MONEY MOVING OUT|LIQUIDITY GROWING|LIQUIDITY SHRINKING/, "overview renders no plain-language flow cards");
+assert.doesNotMatch(overview, /\?cell=/, "overview still opens a detail view inside the page");
 
 const methodology = await read("methodology.html");
-assert.match(methodology, /provenance: &quot;/, "methodology omits the provenance statement");
-assert.match(methodology, /Source catalog/, "methodology omits the source catalog");
+assert.match(methodology, /<h1 id="page-title">Data<\/h1>/, "data page does not render the result board");
 
 // Artifacts are present, well formed, and match the checksums the manifest declares.
 const current = JSON.parse(await read("data/v1/current.json"));

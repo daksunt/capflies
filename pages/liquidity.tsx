@@ -1,77 +1,29 @@
 import { Layout } from "../components/layout";
-import { CellLink, FreshnessNote, StateBadge, TrackReading } from "../components/signal";
-import { cells } from "../lib/current-release";
-import { label, regions, sourcesFor } from "../lib/radar";
+import { ScoreBar } from "../components/signal";
+import { cells, release } from "../lib/current-release";
+import { formatScore, label, regions } from "../lib/radar";
 
-const liquidityCells = regions
-  .map((region) => cells.find((cell) => cell.region === region && cell.assetClass === "liquidity")!)
-  .filter((cell) => cell.state !== "unavailable");
+const items = regions
+  .map((region) => cells.find((cell) => cell.region === region && cell.assetClass === "liquidity"))
+  .filter((cell): cell is NonNullable<typeof cell> => Boolean(cell?.flowTrend));
 
 export default function Liquidity() {
   return (
     <Layout title="Liquidity">
-      <section className="hero narrow">
-        <p className="eyebrow">Liquidity</p>
-        <h1>Regional liquidity conditions</h1>
-        <p>
-          Central-bank balance sheets, official reserves, and cross-border credit aggregates. Liquidity is a constructed
-          or measured stock change, never a positioning proxy, so most regions show a flow track only. Regional labels
-          name the precise official coverage when a single institution is being used as a proxy.
-        </p>
+      <section className="flow-board" aria-labelledby="page-title">
+        <div className="flow-board-head"><h1 id="page-title">Liquidity</h1><p>{release.dataThrough}</p></div>
+        <div className="flow-cards">
+          {items.map((cell) => {
+            const score = cell.flowTrend!.score;
+            const up = score > 0;
+            return <article className={`flow-card tone-${up ? "positive" : "negative"}`} key={cell.id}>
+              <span className="flow-arrow" aria-hidden="true">{up ? "↑" : "↓"}</span>
+              <span className="flow-direction">{up ? "LIQUIDITY GROWING" : "LIQUIDITY SHRINKING"}</span>
+              <h2>{label[cell.region]}</h2><span className="flow-score">{formatScore(score)}</span><ScoreBar score={score} />
+            </article>;
+          })}
+        </div>
       </section>
-
-      {liquidityCells.map((cell) => (
-        <section className="panel" key={cell.id} aria-labelledby={`${cell.id}-title`}>
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">{label[cell.region]}</p>
-              <h2 id={`${cell.id}-title`}>
-                <CellLink cell={cell}>{label[cell.region]} liquidity</CellLink>
-              </h2>
-            </div>
-            <p className="legend">
-              <StateBadge state={cell.state} /> <FreshnessNote freshness={cell.freshness} asOf={cell.asOf} />
-            </p>
-          </div>
-
-          {cell.note ? <p className="notice">{cell.note}</p> : null}
-
-          <div className="tracks">
-            <TrackReading signal={cell.flowTrend} track="flowTrend" />
-            <TrackReading signal={cell.pressure} track="pressure" />
-          </div>
-
-          <div className="table-wrap">
-          <table className="detail-table">
-            <caption>Contributing series configured for {label[cell.region]} liquidity.</caption>
-            <thead>
-              <tr>
-                <th scope="col">Series</th>
-                <th scope="col">Evidence</th>
-                <th scope="col">Frequency</th>
-                <th scope="col">Used this release</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sourcesFor(cell.region, "liquidity").map((source) => {
-                const used = cell.flowTrend?.sourceIds.includes(source.id) || cell.pressure?.sourceIds.includes(source.id);
-                return (
-                  <tr key={source.id}>
-                    <th scope="row">
-                      {source.series}
-                      <span className="muted small block">{source.attribution} · {source.dataset}</span>
-                    </th>
-                    <td>{source.evidenceKind}</td>
-                    <td>{source.frequency}</td>
-                    <td>{used ? "yes" : "no"}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-          </div>
-        </section>
-      ))}
     </Layout>
   );
 }

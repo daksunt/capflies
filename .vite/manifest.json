@@ -6,41 +6,33 @@
       "_rolldown-runtime-hePW80VL.js"
     ]
   },
-  "_layout-CIbt1Yq4.js": {
-    "file": "capflies/_next/static/chunks/layout-CIbt1Yq4.js",
+  "_layout-C4aa5Sjm.js": {
+    "file": "capflies/_next/static/chunks/layout-C4aa5Sjm.js",
     "name": "layout",
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js",
-      "_vinext-DyjT5Kw4.js"
-    ]
-  },
-  "_matrix-Z901S136.js": {
-    "file": "capflies/_next/static/chunks/matrix-Z901S136.js",
-    "name": "matrix",
-    "imports": [
-      "_framework-CNxXF_6U.js",
-      "_layout-CIbt1Yq4.js"
+      "_vinext-CpL8j7Md.js"
     ]
   },
   "_rolldown-runtime-hePW80VL.js": {
     "file": "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "name": "rolldown-runtime"
   },
-  "_vinext-DyjT5Kw4.js": {
-    "file": "capflies/_next/static/chunks/vinext-DyjT5Kw4.js",
+  "_vinext-CpL8j7Md.js": {
+    "file": "capflies/_next/static/chunks/vinext-CpL8j7Md.js",
     "name": "vinext",
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js"
     ],
     "dynamicImports": [
-      "_vinext-DyjT5Kw4.js",
+      "_vinext-CpL8j7Md.js",
       "_framework-CNxXF_6U.js"
     ]
   },
   "pages/_app.tsx": {
-    "file": "capflies/_next/static/chunks/_app-Iy_iRqLD.js",
+    "file": "capflies/_next/static/chunks/_app-AfYrQ3Qe.js",
     "name": "_app",
     "src": "pages/_app.tsx",
     "isDynamicEntry": true,
@@ -48,71 +40,68 @@
       "_framework-CNxXF_6U.js"
     ],
     "css": [
-      "capflies/_next/static/css/_app.CxT8ivXj.css"
+      "capflies/_next/static/css/_app.tz7iiutQ.css"
     ]
   },
   "pages/cross-border.tsx": {
-    "file": "capflies/_next/static/chunks/cross-border-BI-tC4S3.js",
+    "file": "capflies/_next/static/chunks/cross-border-DAU5Qfgz.js",
     "name": "cross-border",
     "src": "pages/cross-border.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-CIbt1Yq4.js"
+      "_layout-C4aa5Sjm.js"
     ]
   },
   "pages/index.tsx": {
-    "file": "capflies/_next/static/chunks/pages-BrBhOlHW.js",
+    "file": "capflies/_next/static/chunks/pages-CuGiq8dh.js",
     "name": "pages",
     "src": "pages/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_vinext-DyjT5Kw4.js",
-      "_layout-CIbt1Yq4.js",
-      "_matrix-Z901S136.js"
+      "_layout-C4aa5Sjm.js"
     ]
   },
   "pages/liquidity.tsx": {
-    "file": "capflies/_next/static/chunks/liquidity-DkguQ-uH.js",
+    "file": "capflies/_next/static/chunks/liquidity-CMY0RAiw.js",
     "name": "liquidity",
     "src": "pages/liquidity.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-CIbt1Yq4.js"
+      "_layout-C4aa5Sjm.js"
     ]
   },
   "pages/markets.tsx": {
-    "file": "capflies/_next/static/chunks/markets-BTav3aiV.js",
+    "file": "capflies/_next/static/chunks/markets-BEDQiFjH.js",
     "name": "markets",
     "src": "pages/markets.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-CIbt1Yq4.js",
-      "_matrix-Z901S136.js"
+      "_layout-C4aa5Sjm.js"
     ]
   },
   "pages/methodology.tsx": {
-    "file": "capflies/_next/static/chunks/methodology-LHM3ew_5.js",
+    "file": "capflies/_next/static/chunks/methodology-DyLvThuk.js",
     "name": "methodology",
     "src": "pages/methodology.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_framework-CNxXF_6U.js",
-      "_layout-CIbt1Yq4.js"
+      "_layout-C4aa5Sjm.js"
     ]
   },
   "virtual:vinext-client-entry": {
-    "file": "capflies/_next/static/chunks/index-Dc3x5281.js",
+    "file": "capflies/_next/static/chunks/index-DHqo_TBX.js",
     "name": "index",
     "src": "virtual:vinext-client-entry",
     "isEntry": true,
     "imports": [
       "_rolldown-runtime-hePW80VL.js",
       "_framework-CNxXF_6U.js",
-      "_vinext-DyjT5Kw4.js"
+      "_vinext-CpL8j7Md.js"
     ],
     "dynamicImports": [
       "pages/index.tsx",
@@ -120,7 +109,7 @@
       "pages/liquidity.tsx",
       "pages/markets.tsx",
       "pages/methodology.tsx",
-      "_vinext-DyjT5Kw4.js",
+      "_vinext-CpL8j7Md.js",
       "pages/_app.tsx"
     ]
   }

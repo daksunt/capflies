@@ -4,76 +4,76 @@
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js"
   ],
   "\u0000vinext:async-hooks-stub": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "\u0000virtual:vinext-client-entry": [],
   "\u0000vite/preload-helper.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "components/cell-detail.tsx": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "components/layout.tsx": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "components/matrix.tsx": [
-    "capflies/_next/static/chunks/matrix-DtqXjHNt.js",
+    "capflies/_next/static/chunks/matrix-7Ly27mST.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js"
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js"
   ],
   "components/signal.tsx": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "data/official-us.json": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "lib/artifacts.ts": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "lib/current-release.ts": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "lib/fixture-release.ts": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "lib/official-release.ts": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "lib/radar.ts": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "lib/registry.ts": [
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
     "capflies/_next/static/chunks/rolldown-runtime-hePW80VL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/react-dom/cjs/react-dom-client.production.js": [
     "capflies/_next/static/chunks/framework-CNxXF_6U.js"
@@ -106,263 +106,263 @@
     "capflies/_next/static/chunks/framework-CNxXF_6U.js"
   ],
   "node_modules/vinext/dist/client/app-nav-failure-handler.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/client/client-rewrite-matcher.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/client/empty-module.js": [],
   "node_modules/vinext/dist/client/instrumentation-client-state.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/client/instrumentation-client.js": [],
   "node_modules/vinext/dist/client/navigation-runtime.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/client/pages-router-link-navigation.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/client/react-instance-bootstrap.js": [],
   "node_modules/vinext/dist/client/react-instance.js": [],
   "node_modules/vinext/dist/client/validate-module-path.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/client/vinext-next-data.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/client/window-next.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/config/config-matchers.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/config/request-context.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/routing/route-matching.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/routing/route-pattern.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/routing/route-trie.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/routing/utils.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-bfcache-id.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-browser-interception-context.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-browser-mpa-navigation.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-browser-rsc-redirect.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-elements-wire.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-elements.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-history-state.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-mounted-slots-header.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-render-dependency.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-rsc-cache-busting.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-rsc-render-mode.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/app-rsc-state-fingerprint.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/artifact-compatibility.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/headers.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/navigation-planner.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/navigation-trace.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/normalize-path.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/operation-token.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/server/rsc-completion-metadata.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/app-router-scroll-state.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/client-locale.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/error.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/hash-scroll.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/head.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/i18n-context.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/als-registry.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/app-prefetch-fetch-queue.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/app-route-detection.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/app-router-context.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/hybrid-client-route-owner-direct.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/hybrid-client-route-owner.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/interpolate-as.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/link-status-registry.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/make-hanging-promise.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/navigation-untracked.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/pages-data-fetch-dedup.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/pages-data-target.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/pages-data-url.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/pages-router-accessor.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/pages-router-components.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/route-pattern-for-warning.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/internal/router-context.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/link-prefetch.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/link.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/navigation-context-state.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/navigation-errors.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/navigation.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/pages-router-runtime.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/ppr-fallback-shell.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/readonly-url-search-params.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/router.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/unrecognized-action-error.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/url-safety.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/shims/url-utils.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/base-path.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/compare.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/deployment-id.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/domain-locale.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/external-url.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/hash.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/html-limited-bots.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/middleware-request-headers.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/number.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/parse-cookie.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/promise.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/protocol-headers.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/query.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/record.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/redirect-digest.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "node_modules/vinext/dist/utils/regex-safety.js": [
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js"
   ],
   "pages/_app.tsx": [
     "capflies/_next/static/chunks/_app-Be2MBHRD.js",
@@ -370,32 +370,32 @@
     "capflies/_next/static/chunks/framework-CNxXF_6U.js"
   ],
   "pages/cross-border.tsx": [
-    "capflies/_next/static/chunks/cross-border-CCge08YK.js",
+    "capflies/_next/static/chunks/cross-border-CvKN97lL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js"
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js"
   ],
   "pages/index.tsx": [
-    "capflies/_next/static/chunks/pages-CaWzZb6y.js",
+    "capflies/_next/static/chunks/pages-Dc9GU4UW.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/vinext-hPdxre0R.js",
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
-    "capflies/_next/static/chunks/matrix-DtqXjHNt.js"
+    "capflies/_next/static/chunks/vinext-DPJzIRgS.js",
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
+    "capflies/_next/static/chunks/matrix-7Ly27mST.js"
   ],
   "pages/liquidity.tsx": [
-    "capflies/_next/static/chunks/liquidity-CeH0_k9c.js",
+    "capflies/_next/static/chunks/liquidity-D3ewPInL.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js"
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js"
   ],
   "pages/markets.tsx": [
-    "capflies/_next/static/chunks/markets-diIqm0Jm.js",
+    "capflies/_next/static/chunks/markets-BFslUL_s.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js",
-    "capflies/_next/static/chunks/matrix-DtqXjHNt.js"
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js",
+    "capflies/_next/static/chunks/matrix-7Ly27mST.js"
   ],
   "pages/methodology.tsx": [
-    "capflies/_next/static/chunks/methodology-DsON6rF0.js",
+    "capflies/_next/static/chunks/methodology-CHvodrq7.js",
     "capflies/_next/static/chunks/framework-CNxXF_6U.js",
-    "capflies/_next/static/chunks/layout-CPlNMcA3.js"
+    "capflies/_next/static/chunks/layout-B_8V9Iys.js"
   ],
   "styles/globals.css": [
     "capflies/_next/static/chunks/_app-Be2MBHRD.js",

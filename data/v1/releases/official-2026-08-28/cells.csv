@@ -11,13 +11,13 @@ us,rates,pressure-only,,-42.9,medium,current,2026-08-27,official
 us,credit,insufficient,,,,,,official
 us,real-assets,insufficient,,,,,,official
 us,crypto,unavailable,,,,,,official
-europe,liquidity,insufficient,,,,,,official
+europe,liquidity,flow-only,-71.2,,medium,current,2026-08-21,official
 europe,equities,insufficient,,,,,,official
 europe,rates,insufficient,,,,,,official
 europe,credit,insufficient,,,,,,official
 europe,real-assets,unavailable,,,,,,official
 europe,crypto,unavailable,,,,,,official
-asia,liquidity,insufficient,,,,,,official
+asia,liquidity,flow-only,-72.5,,medium,current,2026-07-01,official
 asia,equities,insufficient,,,,,,official
 asia,rates,unavailable,,,,,,official
 asia,credit,insufficient,,,,,,official

@@ -1,0 +1,6 @@
+source_id,publisher,region,asset_class,track,evidence_kind,transform,as_of,released_at,score,calibration_observations,calibration_years,reconstructed,provenance
+fed-h41-total-assets,fred,us,liquidity,flowTrend,constructed,stock-change-13w,2026-08-26,2026-08-26,15.7,521,9,false,official
+nyfed-on-rrp,fred,us,liquidity,flowTrend,constructed,stock-change-13w,2026-08-28,2026-08-28,79.6,2416,9,false,official
+fed-h15-10y,fred,us,rates,pressure,inferred,yield-change-13w,2026-08-27,2026-08-27,-42.9,2498,9,false,official
+ecb-balance-sheet,fred,europe,liquidity,flowTrend,constructed,stock-change-13w,2026-08-21,2026-08-21,-71.2,521,9,false,official
+boj-total-assets,fred,asia,liquidity,flowTrend,constructed,stock-change-13w,2026-07-01,2026-07-01,-72.5,120,9,false,official

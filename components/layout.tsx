@@ -57,7 +57,7 @@ export function Layout({ title, children }: { title: string; children: ReactNode
         </p>
       ) : null}
 
-      {staleSources.length ? (
+      {release.provenance === "fixture" && staleSources.length ? (
         <p className="banner subtle" role="status">
           {staleSources.length} of {release.sourceHealth.length} configured series are stale, expired, or missing in this
           release. Affected tracks are carried with their original as-of date or suppressed, never filled in.{" "}

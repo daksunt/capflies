@@ -84,6 +84,19 @@ export default function Overview() {
         </div>
       </section>
 
+      <section className="capital-primer" aria-labelledby="primer-title">
+        <div className="primer-intro">
+          <p className="kicker">The useful mental model</p>
+          <h2 id="primer-title">Capital flow is not a price call.</h2>
+          <p>A rising market can still be losing long-term capital; a falling market can still be attracting it. Capflies follows the underlying movement, then shows whether the market is leaning with it or against it.</p>
+        </div>
+        <ol className="primer-steps">
+          <li><span>01</span><div><h3>Start with flow</h3><p>Reported allocations, balance sheets and issuance tell you where funding has actually gone. This is the slower, more concrete signal.</p></div></li>
+          <li><span>02</span><div><h3>Then read pressure</h3><p>Yields, spreads and positioning can show where the next move is building. It is leading evidence, not a promise.</p></div></li>
+          <li><span>03</span><div><h3>Use agreement carefully</h3><p>When both point the same way, investigate the regime. When they split, do not average them: ask what is changing first.</p></div></li>
+        </ol>
+      </section>
+
       <section className="map-section" aria-labelledby="matrix-title">
         <div className="section-heading map-heading"><div><p className="kicker">The full map</p><h2 id="matrix-title">Where the evidence is pointing</h2></div><p className="legend"><span className="key">F</span> observed flow <span className="key">P</span> market pressure</p></div>
         <p className="map-explainer">Read across a row to see a region. Read down a column to compare an asset class. Select any available cell to see its evidence, dates and limits.</p>

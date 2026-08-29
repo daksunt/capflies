@@ -30,6 +30,10 @@ export const officialInputs: SourceInput[] = [
   asInput("fed-h15-10y", "DGS10"),
   asInput("ecb-balance-sheet", "ECBASSETSW"),
   asInput("boj-total-assets", "JPNASSETS"),
+  asInput("tic-equities-us", "FORLTEQTYNET69995"),
+  asInput("tic-treasuries-us", "FORLTTREASNET69995"),
+  asInput("tic-agency-us", "FORLTAGCYNET69995"),
+  asInput("tic-corporate-us", "FORLTCORPNET69995"),
 ];
 
 export const release: ReleaseManifest = {

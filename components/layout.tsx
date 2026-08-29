@@ -51,7 +51,7 @@ export function Layout({ title, children }: { title: string; children: ReactNode
 
       {release.provenance === "official" ? (
         <p className="banner official" role="status">
-          <strong>Official release {release.release}.</strong> This release uses validated public central-bank series delivered by FRED.
+          <strong>Official release {release.release}.</strong> This release uses validated public central-bank and Treasury TIC series delivered by FRED.
           Coverage is intentionally narrow: unsupported markets remain unavailable rather than being estimated. {" "}
           <Link href="/methodology#status">Read the coverage</Link>.
         </p>

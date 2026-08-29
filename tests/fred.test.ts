@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { impulses, parseFredCsv, scoreLatest } from "../lib/fred.ts";
+import { impulses, parseFredCsv, rollingFlows, scoreLatest } from "../lib/fred.ts";
 
 test("FRED parser rejects malformed values and ignores blank non-observation days", () => {
   const rows = ["observation_date,TEST"];
@@ -28,4 +28,14 @@ test("impulses use an earlier value and never a later value", () => {
   const result = impulses(points, true);
   assert.ok(result.length > 0);
   assert.ok(result.every((item) => Number.isFinite(item.value)));
+});
+
+test("published monthly flows are summed over the trailing three observations", () => {
+  const points = [
+    { date: "2025-01-01", value: 10 }, { date: "2025-02-01", value: -5 },
+    { date: "2025-03-01", value: 7 }, { date: "2025-04-01", value: 2 },
+  ];
+  assert.deepEqual(rollingFlows(points), [
+    { date: "2025-03-01", value: 12 }, { date: "2025-04-01", value: 4 },
+  ]);
 });

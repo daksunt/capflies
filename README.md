@@ -34,7 +34,7 @@ checksummed JSON/CSV release artifacts under `/data/v1/`.
 2. Push the source change to `main`: `git add <files> && git commit -m "..." && git push origin main`.
 3. Run `npm run publish`. It builds the Pages version, verifies its routes and artifacts, then updates the `gh-pages` branch that powers [the live site](https://daksunt.github.io/capflies/).
 
-For the verified official release, run `npm run refresh:official`, review `data/official.json`, then run `npm run publish:official`. The refresh fetches FRED WALCL, RRPONTSYD, DGS10, ECBASSETSW, and JPNASSETS, records source checksums, and publishes U.S., Eurosystem, and Bank of Japan liquidity/rates evidence. It does not fill unsupported markets.
+For the verified official release, run `npm run refresh:official`, review `data/official.json`, then run `npm run publish:official`. The refresh fetches Federal Reserve, Eurosystem, Bank of Japan, and Treasury TIC series delivered by FRED, records source checksums, and publishes U.S. portfolio-flow, rates, and regional-liquidity evidence. It does not fill unsupported markets.
 
 The current release intentionally uses fixture data. Do not replace `lib/fixture-release.ts` with guessed numbers: implement and validate the official source adapters first, then publish an `official`-provenance release.
 

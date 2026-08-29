@@ -2,7 +2,7 @@
 import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { impulses, parseFredCsv, scoreLatest } from "../lib/fred.ts";
+import { impulses, parseFredCsv, rollingFlows, scoreLatest } from "../lib/fred.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const catalog = [
@@ -11,6 +11,10 @@ const catalog = [
   { id: "DGS10", transform: "yield-change-13w", relative: false, unit: "percent" },
   { id: "ECBASSETSW", transform: "stock-change-13w", relative: true, unit: "millions of EUR" },
   { id: "JPNASSETS", transform: "stock-change-13w", relative: true, unit: "billions of JPY" },
+  { id: "FORLTEQTYNET69995", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
+  { id: "FORLTTREASNET69995", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
+  { id: "FORLTAGCYNET69995", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
+  { id: "FORLTCORPNET69995", transform: "signed-flow-3m", flow: true, unit: "millions of USD" },
 ];
 
 async function fetchSeries(definition) {
@@ -19,7 +23,7 @@ async function fetchSeries(definition) {
   if (!response.ok || new URL(response.url).hostname !== "fred.stlouisfed.org") throw new Error(`FRED request failed for ${definition.id}`);
   const text = await response.text();
   const points = parseFredCsv(text, definition.id);
-  const history = impulses(points, definition.relative);
+  const history = definition.flow ? rollingFlows(points) : impulses(points, definition.relative);
   const latest = history.at(-1);
   if (!latest) throw new Error(`No derived history for ${definition.id}`);
   const derived = scoreLatest(history);

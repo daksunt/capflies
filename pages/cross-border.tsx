@@ -5,11 +5,9 @@ import { formatScore, freshnessOf, label, sourceById } from "../lib/radar";
 import { release as manifest } from "../lib/current-release";
 
 /** Cross-border evidence: reported external flows and cross-border bank claims. */
-const lanePublishers = new Set(["treasury-tic", "imf", "bis"]);
-
 const lanes = releaseInputs
   .map((input) => ({ input, source: sourceById(input.sourceId) }))
-  .filter(({ source }) => lanePublishers.has(source.publisher) && source.track === "flowTrend")
+  .filter(({ source }) => (source.id.startsWith("tic-") || ["imf", "bis"].includes(source.publisher)) && source.track === "flowTrend")
   .map((lane) => ({
     ...lane,
     freshness: freshnessOf(lane.source, lane.input.asOf, manifest.dataThrough),

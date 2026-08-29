@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "provenance": "official",
   "publisher": "Federal Reserve Bank of St. Louis FRED",
-  "retrievedAt": "2026-08-29T09:25:25.479Z",
+  "retrievedAt": "2026-08-29T09:27:39.800Z",
   "dataThrough": "2026-08-28",
   "sources": [
     {
@@ -67,6 +67,58 @@
       "periodEnd": "2026-07-01",
       "impulse": -0.028582745083967166,
       "score": -72.5,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTEQTYNET69995",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTEQTYNET69995",
+      "checksum": "e13ca497d30c4580705e2645ba9492ece38779df5cf4e294a08b74945537d200",
+      "periodEnd": "2026-06-01",
+      "impulse": 424863,
+      "score": 100,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTTREASNET69995",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTTREASNET69995",
+      "checksum": "282a7a90793bee66d31a63ab5abcb49b417df6d34b15ec4f76c6043bf903124a",
+      "periodEnd": "2026-06-01",
+      "impulse": 110955,
+      "score": 57.5,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTAGCYNET69995",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTAGCYNET69995",
+      "checksum": "0676e3a3db797e6cf8e489179954da999826ed0fff0457fdfd204787b38170ca",
+      "periodEnd": "2026-06-01",
+      "impulse": 28540,
+      "score": 60,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    },
+    {
+      "id": "FORLTCORPNET69995",
+      "transform": "signed-flow-3m",
+      "flow": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FORLTCORPNET69995",
+      "checksum": "47cded321c89c6f50a4b94572ccd18172de3cf7ce24674d6a98885769209cefb",
+      "periodEnd": "2026-06-01",
+      "impulse": 107178,
+      "score": 87.5,
       "calibrationObservations": 120,
       "calibrationYears": 9
     }

@@ -17,7 +17,7 @@ export function parseFredCsv(text: string, id: string): FredPoint[] {
     if (!Number.isFinite(value)) throw new Error(`Invalid FRED value for ${id} on ${date}`);
     points.push({ date, value });
   }
-  if (points.length < 300) throw new Error(`Too little usable history for ${id}`);
+  if (points.length < 30) throw new Error(`Too little usable history for ${id}`);
   for (let index = 1; index < points.length; index += 1) {
     if (points[index - 1]!.date >= points[index]!.date) throw new Error(`Unsorted or duplicate FRED dates for ${id}`);
   }
@@ -36,6 +36,14 @@ export function pointAtOrBefore(points: FredPoint[], target: string, before: num
 }
 
 export type Impulse = { date: string; value: number };
+
+/** Cumulative three-observation published flow, suitable for monthly TIC series. */
+export function rollingFlows(points: FredPoint[], observations = 3): Impulse[] {
+  return points.flatMap((point, index) => {
+    if (index < observations - 1) return [];
+    return [{ date: point.date, value: points.slice(index - observations + 1, index + 1).reduce((sum, item) => sum + item.value, 0) }];
+  });
+}
 
 /** A 13-week percentage stock change, or signed yield change when `relative` is false. */
 export function impulses(points: FredPoint[], relative: boolean, lagDays = 91): Impulse[] {

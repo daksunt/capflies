@@ -46,7 +46,7 @@ export function impulses(points: FredPoint[], relative: boolean, lagDays = 91): 
   });
 }
 
-export function scoreLatest(history: Impulse[], latestDate = history.at(-1)?.date): { impulse: number; score: number; calibrationObservations: number } {
+export function scoreLatest(history: Impulse[], latestDate = history.at(-1)?.date): { impulse: number; score: number; calibrationObservations: number; calibrationYears: number } {
   if (!latestDate) throw new Error("No impulse history");
   const latest = history.find((item) => item.date === latestDate);
   if (!latest) throw new Error(`No impulse on ${latestDate}`);
@@ -54,6 +54,10 @@ export function scoreLatest(history: Impulse[], latestDate = history.at(-1)?.dat
   earliest.setUTCFullYear(earliest.getUTCFullYear() - 10);
   const reference = history.filter((item) => item.date < latestDate && item.date >= earliest.toISOString().slice(0, 10));
   if (reference.length < 20) throw new Error("Insufficient prior calibration history");
+  const fiveYearsEarlier = new Date(dayNumber(latestDate));
+  fiveYearsEarlier.setUTCFullYear(fiveYearsEarlier.getUTCFullYear() - 5);
+  if (reference[0]!.date > fiveYearsEarlier.toISOString().slice(0, 10)) throw new Error("Insufficient calibration span");
   const percentile = reference.filter((item) => Math.abs(item.value) <= Math.abs(latest.value)).length / reference.length;
-  return { impulse: latest.value, score: Math.sign(latest.value) * Math.round(percentile * 1000) / 10, calibrationObservations: reference.length };
+  const calibrationYears = Math.floor((dayNumber(latestDate) - dayNumber(reference[0]!.date)) / 365.25 / 86_400_000);
+  return { impulse: latest.value, score: Math.sign(latest.value) * Math.round(percentile * 1000) / 10, calibrationObservations: reference.length, calibrationYears };
 }

@@ -9,6 +9,8 @@ const catalog = [
   { id: "WALCL", transform: "stock-change-13w", relative: true, unit: "millions of USD" },
   { id: "RRPONTSYD", transform: "stock-change-13w", relative: true, unit: "billions of USD" },
   { id: "DGS10", transform: "yield-change-13w", relative: false, unit: "percent" },
+  { id: "ECBASSETSW", transform: "stock-change-13w", relative: true, unit: "millions of EUR" },
+  { id: "JPNASSETS", transform: "stock-change-13w", relative: true, unit: "billions of JPY" },
 ];
 
 async function fetchSeries(definition) {
@@ -29,11 +31,14 @@ async function fetchSeries(definition) {
     impulse: derived.impulse,
     score: derived.score,
     calibrationObservations: derived.calibrationObservations,
+    calibrationYears: derived.calibrationYears,
   };
 }
 
 const sources = await Promise.all(catalog.map(fetchSeries));
-const dataThrough = sources.map((source) => source.periodEnd).sort()[0];
+// The release clock is its newest selected observation; individual inputs retain
+// their own as-of dates and are judged against this clock for freshness.
+const dataThrough = sources.map((source) => source.periodEnd).sort().at(-1);
 const output = {
   schemaVersion: 1,
   provenance: "official",
@@ -43,5 +48,5 @@ const output = {
   sources,
 };
 await mkdir(path.join(root, "data"), { recursive: true });
-await writeFile(path.join(root, "data", "official-us.json"), JSON.stringify(output, null, 2) + "\n");
+await writeFile(path.join(root, "data", "official.json"), JSON.stringify(output, null, 2) + "\n");
 console.log(`Refreshed ${sources.length} official FRED series through ${dataThrough}.`);

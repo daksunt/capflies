@@ -12,10 +12,11 @@ export default function Liquidity() {
     <Layout title="Liquidity">
       <section className="hero narrow">
         <p className="eyebrow">Liquidity</p>
-        <h1>Global liquidity conditions</h1>
+        <h1>Regional liquidity conditions</h1>
         <p>
           Central-bank balance sheets, official reserves, and cross-border credit aggregates. Liquidity is a constructed
-          or measured stock change, never a positioning proxy, so most regions show a flow track only.
+          or measured stock change, never a positioning proxy, so most regions show a flow track only. Regional labels
+          name the precise official coverage when a single institution is being used as a proxy.
         </p>
       </section>
 

@@ -10,11 +10,17 @@ test("FRED parser rejects malformed values and ignores blank non-observation day
 });
 
 test("latest score only calibrates against strictly earlier impulses", () => {
-  const history = Array.from({ length: 25 }, (_, index) => ({ date: `202${Math.floor(index / 12)}-${String((index % 12) + 1).padStart(2, "0")}-01`, value: index + 1 }));
+  const history = Array.from({ length: 73 }, (_, index) => ({ date: `202${Math.floor(index / 12)}-${String((index % 12) + 1).padStart(2, "0")}-01`, value: index + 1 }));
   const result = scoreLatest(history);
-  assert.equal(result.impulse, 25);
-  assert.equal(result.calibrationObservations, 24);
+  assert.equal(result.impulse, 73);
+  assert.equal(result.calibrationObservations, 72);
+  assert.equal(result.calibrationYears, 6);
   assert.equal(result.score, 100);
+});
+
+test("latest score requires five calendar years, not just twenty observations", () => {
+  const history = Array.from({ length: 25 }, (_, index) => ({ date: new Date(Date.UTC(2020, index, 1)).toISOString().slice(0, 10), value: index + 1 }));
+  assert.throws(() => scoreLatest(history), /calibration span/);
 });
 
 test("impulses use an earlier value and never a later value", () => {

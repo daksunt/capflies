@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "provenance": "official",
+  "publisher": "Federal Reserve Bank of St. Louis FRED",
+  "retrievedAt": "2026-08-29T09:25:25.479Z",
+  "dataThrough": "2026-08-28",
+  "sources": [
+    {
+      "id": "WALCL",
+      "transform": "stock-change-13w",
+      "relative": true,
+      "unit": "millions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WALCL",
+      "checksum": "e7aa0f048487dc32437c2517a8d5633655ab17606482be2a5999a31b858fef5b",
+      "periodEnd": "2026-08-26",
+      "impulse": 0.0039569636758520505,
+      "score": 15.7,
+      "calibrationObservations": 521,
+      "calibrationYears": 9
+    },
+    {
+      "id": "RRPONTSYD",
+      "transform": "stock-change-13w",
+      "relative": true,
+      "unit": "billions of USD",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RRPONTSYD",
+      "checksum": "1f9ea10f72c00156dc3e07f9e880d8ce2385b2df03592f2742193b1344f8a402",
+      "periodEnd": "2026-08-28",
+      "impulse": -0.985013273957352,
+      "score": -79.6,
+      "calibrationObservations": 2416,
+      "calibrationYears": 9
+    },
+    {
+      "id": "DGS10",
+      "transform": "yield-change-13w",
+      "relative": false,
+      "unit": "percent",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+      "checksum": "3d8f76ffc003db070d0025d2f7ff2078865bbcc43cf4576009cedbcc7c110b4d",
+      "periodEnd": "2026-08-27",
+      "impulse": -0.21999999999999975,
+      "score": -42.9,
+      "calibrationObservations": 2498,
+      "calibrationYears": 9
+    },
+    {
+      "id": "ECBASSETSW",
+      "transform": "stock-change-13w",
+      "relative": true,
+      "unit": "millions of EUR",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=ECBASSETSW",
+      "checksum": "9d721f615e6a5d538ced67a0faec0b1eb28ca75ceb4815480183ab2cd6b9cb07",
+      "periodEnd": "2026-08-21",
+      "impulse": -0.04420377376057705,
+      "score": -71.2,
+      "calibrationObservations": 521,
+      "calibrationYears": 9
+    },
+    {
+      "id": "JPNASSETS",
+      "transform": "stock-change-13w",
+      "relative": true,
+      "unit": "billions of JPY",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=JPNASSETS",
+      "checksum": "fcf935a718d60302cc5302d34b609ec1bdcf6a88daa17e58a379aa67900ddc59",
+      "periodEnd": "2026-07-01",
+      "impulse": -0.028582745083967166,
+      "score": -72.5,
+      "calibrationObservations": 120,
+      "calibrationYears": 9
+    }
+  ]
+}

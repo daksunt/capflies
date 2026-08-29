@@ -16,3 +16,8 @@ test("official U.S. coverage is narrow and derived from the validated inputs", (
   assert.equal(rates.state, "pressure-only");
   assert.deepEqual(rates.pressure?.sourceIds, ["fed-h15-10y"]);
 });
+
+test("official release includes validated European and Asian liquidity", () => {
+  assert.deepEqual(cellFor("europe:liquidity")?.flowTrend?.sourceIds, ["ecb-balance-sheet"]);
+  assert.deepEqual(cellFor("asia:liquidity")?.flowTrend?.sourceIds, ["boj-total-assets"]);
+});

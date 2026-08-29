@@ -49,7 +49,7 @@ export default function Methodology() {
         {fixture ? (
           <p>Release {release.release} carries <code>provenance: "fixture"</code>. Its scores were written by hand to exercise the derivation rules. They are not observations, estimates, or a description of any real market.</p>
         ) : (
-          <p>Release {release.release} carries <code>provenance: "official"</code>. It contains only selected, checksummed Federal Reserve Bank of St. Louis FRED observations used by the U.S. liquidity and rates tracks. All other configured markets remain unavailable or insufficient; no fixture values are mixed into this release.</p>
+          <p>Release {release.release} carries <code>provenance: "official"</code>. It contains only selected, checksummed FRED observations for Federal Reserve, Eurosystem, and Bank of Japan series. All other configured markets remain unavailable or insufficient; no fixture values are mixed into this release.</p>
         )}
         <p>The registry below lists the intended coverage. An entry stays unverified until an adapter has fetched and validated its exact selector, unit and licence.</p>
       </section>

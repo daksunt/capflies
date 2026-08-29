@@ -114,14 +114,14 @@ export const sources: SourceDefinition[] = [
   define({ id: "cftc-commodities-us", publisher: "cftc", dataset: "Commitments of Traders, disaggregated", series: "WTI crude oil managed money net position", ...weekly, unit: "ratio", transform: "position-change-4w", evidenceKind: "positioning", region: "us", assetClass: "real-assets", track: "pressure" }),
 
   // Europe
-  define({ id: "ecb-balance-sheet", publisher: "ecb", dataset: "Eurosystem weekly financial statement", series: "Total assets of the Eurosystem", ...weekly, unit: "EUR", transform: "stock-change-13w", evidenceKind: "constructed", region: "europe", assetClass: "liquidity", track: "flowTrend" }),
+  define({ id: "ecb-balance-sheet", publisher: "fred", dataset: "Eurosystem weekly financial statement (FRED ECBASSETSW)", series: "Total assets of the Eurosystem", ...weekly, unit: "millions of EUR", transform: "stock-change-13w", evidenceKind: "constructed", region: "europe", assetClass: "liquidity", track: "flowTrend", verified: true }),
   define({ id: "imf-portfolio-equity-europe", publisher: "imf", dataset: "Balance of Payments", series: "Portfolio investment, equity, euro area", ...quarterly, unit: "EUR", transform: "signed-flow", evidenceKind: "measured", region: "europe", assetClass: "equities", track: "flowTrend" }),
   define({ id: "ecb-yield-curve", publisher: "ecb", dataset: "Euro area yield curves", series: "AAA-rated euro area 10-year government bond yield", frequency: "daily", staleAfterDays: 7, expireAfterDays: 21, unit: "percent", transform: "yield-change-13w", evidenceKind: "inferred", region: "europe", assetClass: "rates", track: "pressure" }),
   define({ id: "imf-portfolio-debt-europe", publisher: "imf", dataset: "Balance of Payments", series: "Portfolio investment, debt securities, euro area", ...quarterly, unit: "EUR", transform: "signed-flow", evidenceKind: "measured", region: "europe", assetClass: "credit", track: "flowTrend" }),
   define({ id: "bis-claims-europe", publisher: "bis", dataset: "Locational banking statistics", series: "Cross-border claims on euro area residents", ...quarterly, unit: "USD", transform: "stock-change-13w", evidenceKind: "measured", region: "europe", assetClass: "credit", track: "flowTrend" }),
 
   // Asia
-  define({ id: "boj-total-assets", publisher: "boj", dataset: "Bank of Japan Accounts", series: "Total assets of the Bank of Japan", ...weekly, unit: "JPY", transform: "stock-change-13w", evidenceKind: "constructed", region: "asia", assetClass: "liquidity", track: "flowTrend" }),
+  define({ id: "boj-total-assets", publisher: "fred", dataset: "Bank of Japan Accounts (FRED JPNASSETS)", series: "Total assets of the Bank of Japan", ...monthly, unit: "billions of JPY", transform: "stock-change-13w", evidenceKind: "constructed", region: "asia", assetClass: "liquidity", track: "flowTrend", verified: true }),
   define({ id: "imf-reserves-asia", publisher: "imf", dataset: "International Reserves and Foreign Currency Liquidity", series: "Emerging and developing Asia total reserves", ...quarterly, unit: "USD", transform: "stock-change-13w", evidenceKind: "measured", region: "asia", assetClass: "liquidity", track: "flowTrend" }),
   define({ id: "imf-portfolio-equity-asia", publisher: "imf", dataset: "Balance of Payments", series: "Portfolio investment, equity, Asia country group", ...quarterly, unit: "USD", transform: "signed-flow", evidenceKind: "measured", region: "asia", assetClass: "equities", track: "flowTrend" }),
   define({ id: "bis-claims-asia", publisher: "bis", dataset: "Locational banking statistics", series: "Cross-border claims on Asia-Pacific residents", ...quarterly, unit: "USD", transform: "stock-change-13w", evidenceKind: "measured", region: "asia", assetClass: "credit", track: "flowTrend" }),
@@ -152,8 +152,8 @@ export function sourceById(id: string): SourceDefinition {
 export const label: Record<string, string> = {
   global: "Global",
   us: "United States",
-  europe: "Europe",
-  asia: "Asia",
+  europe: "Europe (Eurosystem)",
+  asia: "Asia (Japan)",
   emerging: "Emerging markets",
   liquidity: "Liquidity",
   equities: "Equities",

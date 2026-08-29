@@ -1,5 +1,5 @@
 /** A narrow release made only from validated public FRED observations. */
-import fred from "../data/official-us.json" with { type: "json" };
+import fred from "../data/official.json" with { type: "json" };
 import { deriveBrief, deriveCells, deriveSourceHealth, type MatrixCell, type ReleaseManifest, type SourceInput } from "./radar.ts";
 import { label } from "./registry.ts";
 
@@ -17,7 +17,7 @@ const asInput = (sourceId: string, fredId: string, direction = 1): SourceInput =
     releasedAt: item.periodEnd,
     score: item.score * direction,
     calibrationObservations: item.calibrationObservations,
-    calibrationYears: 10,
+    calibrationYears: item.calibrationYears,
     reconstructed: false,
     provenance: "official",
   };
@@ -28,12 +28,14 @@ export const officialInputs: SourceInput[] = [
   asInput("fed-h41-total-assets", "WALCL"),
   asInput("nyfed-on-rrp", "RRPONTSYD", -1),
   asInput("fed-h15-10y", "DGS10"),
+  asInput("ecb-balance-sheet", "ECBASSETSW"),
+  asInput("boj-total-assets", "JPNASSETS"),
 ];
 
 export const release: ReleaseManifest = {
   schemaVersion: 1,
-  methodologyVersion: "0.3.0-official-us",
-  release: `official-us-${fred.dataThrough}`,
+  methodologyVersion: "0.3.0-official",
+  release: `official-${fred.dataThrough}`,
   generatedAt: fred.retrievedAt,
   dataThrough: fred.dataThrough,
   liveSince: fred.retrievedAt.slice(0, 10),

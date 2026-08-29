@@ -21,12 +21,17 @@ const takeaway = {
   "Partial evidence": "The evidence is incomplete",
 } as const;
 
-const narrative = brief.length
-  ? brief.map((item) => ({ ...item, title: takeaway[item.kind] }))
-  : [
-      { kind: "Partial evidence", cellId: "us:liquidity", title: "Liquidity is improving", text: "" },
-      { kind: "Partial evidence", cellId: "us:rates", title: "Rates pressure is tightening", text: "" },
-    ];
+function fallbackTitle(cell: (typeof cells)[number]) {
+  const score = cell.flowTrend?.score ?? cell.pressure?.score ?? 0;
+  if (cell.assetClass === "liquidity") return score >= 0 ? "Liquidity is expanding" : "Liquidity is contracting";
+  return score >= 0 ? "Capital support is building" : "Capital pressure is building";
+}
+
+const fallbackNarrative = rankCells(cells)
+  .filter((cell) => cellMagnitude(cell) > 0)
+  .slice(0, 3)
+  .map((cell) => ({ kind: "Partial evidence" as const, cellId: cell.id, title: fallbackTitle(cell), text: "" }));
+const narrative = brief.length ? brief.map((item) => ({ ...item, title: takeaway[item.kind] })) : fallbackNarrative;
 
 function trackSentence(flow: number | undefined, pressure: number | undefined) {
   if (flow !== undefined && pressure !== undefined) return `Cash-flow evidence is ${formatScore(flow)} while forward-looking pressure is ${formatScore(pressure)}.`;
@@ -41,7 +46,7 @@ export default function Overview() {
         <div className="front-hero-copy">
           <p className="kicker">Capital flows, made legible</p>
           <h1 id="page-title">Follow the money.<br />Keep the doubt.</h1>
-          <p className="front-lede">Capflies separates <strong>where money has actually moved</strong> from <strong>where markets are leaning next</strong>. Start with the three signals below; use the map only when you want the full picture.</p>
+          <p className="front-lede">Capflies separates <strong>where money has actually moved</strong> from <strong>where markets are leaning next</strong>. Start with the signals below; use the map only when you want the full picture.</p>
           <div className="hero-meta"><span>Release {release.release}</span><span>Evidence through {release.dataThrough}</span><span>Research, not a trade call</span></div>
         </div>
         <aside className="orientation-card" aria-label="How to read Capflies">
@@ -55,12 +60,12 @@ export default function Overview() {
       </section>
 
       <section className="story-section" aria-labelledby="story-title">
-        <div className="section-intro"><p className="kicker">The short version</p><h2 id="story-title">What this release is saying</h2><p>These are the only three things you need to take away before opening the detailed map.</p></div>
+        <div className="section-intro"><p className="kicker">The short version</p><h2 id="story-title">What this release is saying</h2><p>These are the strongest usable readings before you open the detailed map. This release is a liquidity snapshot, not a complete map of cross-border portfolio allocation.</p></div>
         <div className="story-grid">
           {narrative.map((item, index) => {
             const cell = cellFor(item.cellId)!;
             return (
-              <article className={`story-card story-card-${index + 1}`} key={item.kind}>
+              <article className={`story-card tone-${(cell.flowTrend?.score ?? cell.pressure?.score ?? 0) >= 0 ? "positive" : "negative"}`} key={item.cellId}>
                 <p className="story-index">0{index + 1}</p><p className="story-label">{item.title}</p>
                 <h3>{label[cell.region]} {label[cell.assetClass]!.toLowerCase()}</h3><StateBadge state={cell.state} />
                 <p className="story-copy">{trackSentence(cell.flowTrend?.score, cell.pressure?.score)}</p>

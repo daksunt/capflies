@@ -8,11 +8,14 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "vinext build",
+    "build": "npm run artifacts && vinext build",
+    "build:pages": "export NEXT_PUBLIC_BASE_PATH=/capflies && npm run build && node scripts/pages-export.mjs",
     "start": "vinext start",
     "test": "node --test tests/*.test.ts",
     "smoke": "npm run build && node scripts/smoke.mjs",
-    "check": "tsc --noEmit && npm test && npm run build"
+    "smoke:pages": "export NEXT_PUBLIC_BASE_PATH=/capflies && npm run build:pages && node scripts/smoke.mjs",
+    "check": "tsc --noEmit && npm test && npm run build",
+    "artifacts": "node scripts/build-artifacts.ts"
   },
   "dependencies": {
     "react": "^19.2.8",

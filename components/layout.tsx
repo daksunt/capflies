@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import type { ReactNode } from "react";
+import { release } from "../lib/fixture-release";
+import { CellDetail } from "./cell-detail";
 
 const links = [
   ["Overview", "/"],
@@ -11,27 +14,60 @@ const links = [
 ] as const;
 
 export function Layout({ title, children }: { title: string; children: ReactNode }) {
+  const { pathname } = useRouter();
+  const staleSources = release.sourceHealth.filter((health) => health.status !== "current");
+
   return (
     <>
       <Head>
         <title>{title} · Capflies</title>
         <meta name="description" content="A public radar for broad global capital-flow trends." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <a className="skip" href="#main">
+        Skip to main content
+      </a>
       <header className="site-header">
         <Link className="wordmark" href="/" aria-label="Capflies overview">
           CAPFLIES
         </Link>
         <nav aria-label="Primary navigation">
           {links.map(([label, href]) => (
-            <Link key={href} href={href}>
+            <Link key={href} href={href} aria-current={pathname === href ? "page" : undefined}>
               {label}
             </Link>
           ))}
         </nav>
       </header>
-      <main>{children}</main>
+
+      {release.provenance === "fixture" ? (
+        <p className="banner" role="status">
+          <strong>Fixture release {release.release}.</strong> Every number on this site is hand-written demonstration
+          data used to build and test the interface. No official source has been fetched yet, and nothing here
+          describes real capital flows.{" "}
+          <Link href="/methodology#status">Read the data status</Link>.
+        </p>
+      ) : null}
+
+      {staleSources.length ? (
+        <p className="banner subtle" role="status">
+          {staleSources.length} of {release.sourceHealth.length} configured series are stale, expired, or missing in this
+          release. Affected tracks are carried with their original as-of date or suppressed, never filled in.{" "}
+          <Link href="/methodology#health">Source health</Link>.
+        </p>
+      ) : null}
+
+      <main id="main">{children}</main>
+      <CellDetail />
       <footer>
-        Research only. Not investment advice. Fixture data is clearly marked until official adapters ship.
+        <p>
+          Capflies is independent research software. It is not investment advice, not a forecast, and is not affiliated
+          with or endorsed by any asset manager, data publisher, or index provider.
+        </p>
+        <p className="muted small">
+          Data through {release.dataThrough} · release {release.release} · methodology {release.methodologyVersion} ·
+          provenance {release.provenance}
+        </p>
       </footer>
     </>
   );

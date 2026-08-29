@@ -27,9 +27,10 @@ test("official release includes validated European and Asian liquidity", () => {
 });
 
 test("official release includes regional Treasury TIC lanes", () => {
-  assert.equal(crossBorderInputs.length, 27);
+  assert.equal(crossBorderInputs.length, 47);
   assert.ok(crossBorderInputs.some((input) => input.sourceId === "tic-india-us-securities"));
   assert.ok(crossBorderInputs.some((input) => input.sourceId === "tic-russia-us-securities"));
   assert.ok(crossBorderInputs.some((input) => input.sourceId === "tic-brazil-us-securities"));
   assert.ok(crossBorderInputs.some((input) => input.sourceId === "tic-south-africa-us-securities"));
+  assert.ok(crossBorderInputs.some((input) => input.sourceId === "tic-us-china-securities"));
 });

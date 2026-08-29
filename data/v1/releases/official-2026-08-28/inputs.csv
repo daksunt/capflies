@@ -8,3 +8,7 @@ tic-equities-us,fred,us,equities,flowTrend,measured,signed-flow,2026-06-01,2026-
 tic-treasuries-us,fred,us,rates,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,57.5,120,9,false,official
 tic-agency-us,fred,us,credit,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,60,120,9,false,official
 tic-corporate-us,fred,us,credit,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,87.5,120,9,false,official
+tic-europe-us-securities,fred,us,equities,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,91.7,120,9,false,official
+tic-asia-us-securities,fred,us,equities,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,98.3,120,9,false,official
+tic-japan-us-securities,fred,us,equities,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,27.5,120,9,false,official
+tic-china-us-securities,fred,us,equities,flowTrend,measured,signed-flow,2026-06-01,2026-06-01,-16.7,120,9,false,official

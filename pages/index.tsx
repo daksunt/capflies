@@ -23,6 +23,10 @@ const takeaway = {
 
 function fallbackTitle(cell: (typeof cells)[number]) {
   const score = cell.flowTrend?.score ?? cell.pressure?.score ?? 0;
+  const direction = score >= 0 ? "adding" : "reducing";
+  if (cell.region === "us" && cell.assetClass === "equities") return `Foreign buyers are ${direction} U.S. equities`;
+  if (cell.region === "us" && cell.assetClass === "credit") return `Foreign buyers are ${direction} U.S. credit`;
+  if (cell.region === "us" && cell.assetClass === "rates") return `Foreign buyers are ${direction} U.S. Treasuries`;
   if (cell.assetClass === "liquidity") return score >= 0 ? "Liquidity is expanding" : "Liquidity is contracting";
   return score >= 0 ? "Capital support is building" : "Capital pressure is building";
 }
